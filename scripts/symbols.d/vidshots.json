@@ -1,0 +1,17 @@
+[
+  {"name": "xmark", "weight": "semibold"},
+  {"name": "plus", "weight": "semibold"},
+  {"name": "stop.fill", "weight": "semibold"},
+  {"name": "doc.on.doc", "weight": "regular"},
+  {"name": "checkmark", "weight": "regular"},
+  {"name": "trash", "weight": "regular"},
+  {"name": "video", "weight": "regular"},
+  {"name": "play.circle.fill", "weight": "regular"},
+  {"name": "chevron.left", "weight": "regular"},
+  {"name": "doc.on.clipboard", "weight": "regular"},
+  {"name": "video.slash", "weight": "regular"},
+  {"name": "photo", "weight": "regular"},
+  {"name": "play.fill", "weight": "regular"},
+  {"name": "speaker.wave.2.fill", "weight": "regular"},
+  {"name": "arrow.up.left.and.arrow.down.right", "weight": "regular"}
+]

@@ -1,0 +1,8 @@
+# Not published to the public mirror (scripts/publish-backup.sh); also its .gitignore.
+references/
+node_modules/
+.DS_Store
+# Apple SF Symbols exports (not redistributable). Muesli's own glyphs (muesli-mark.png, time-turner.png) stay.
+src/icons/generated/*@*.png
+# Third-party app icons (Apple, Google, Zoom artwork)
+src/screens/timeline/app-icons/*.png

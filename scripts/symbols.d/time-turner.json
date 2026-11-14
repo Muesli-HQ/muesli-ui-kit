@@ -1,0 +1,154 @@
+[
+ {
+  "name": "chevron.left",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.right",
+  "weight": "regular"
+ },
+ {
+  "name": "calendar",
+  "weight": "regular"
+ },
+ {
+  "name": "gearshape",
+  "weight": "regular"
+ },
+ {
+  "name": "magnifyingglass",
+  "weight": "regular"
+ },
+ {
+  "name": "lock",
+  "weight": "regular"
+ },
+ {
+  "name": "arrow.up.left.and.arrow.down.right",
+  "weight": "regular"
+ },
+ {
+  "name": "app.dashed",
+  "weight": "regular"
+ },
+ {
+  "name": "text.page",
+  "weight": "regular"
+ },
+ {
+  "name": "square.stack",
+  "weight": "regular"
+ },
+ {
+  "name": "doc.on.doc",
+  "weight": "regular"
+ },
+ {
+  "name": "checkmark",
+  "weight": "regular"
+ },
+ {
+  "name": "sparkles",
+  "weight": "regular"
+ },
+ {
+  "name": "ellipsis",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.up",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.down",
+  "weight": "regular"
+ },
+ {
+  "name": "stop.fill",
+  "weight": "regular"
+ },
+ {
+  "name": "checklist",
+  "weight": "regular"
+ },
+ {
+  "name": "circle",
+  "weight": "regular"
+ },
+ {
+  "name": "checkmark.circle.fill",
+  "weight": "regular"
+ },
+ {
+  "name": "bell",
+  "weight": "regular"
+ },
+ {
+  "name": "bell.badge",
+  "weight": "regular"
+ },
+ {
+  "name": "arrow.up.forward.square",
+  "weight": "regular"
+ },
+ {
+  "name": "trash",
+  "weight": "regular"
+ },
+ {
+  "name": "arrow.up.right",
+  "weight": "regular"
+ },
+ {
+  "name": "photo",
+  "weight": "regular"
+ },
+ {
+  "name": "clock.arrow.circlepath",
+  "weight": "regular"
+ },
+ {
+  "name": "xmark",
+  "weight": "regular"
+ },
+ {
+  "name": "macwindow",
+  "weight": "regular"
+ },
+ {
+  "name": "text.viewfinder",
+  "weight": "regular"
+ },
+ {
+  "name": "internaldrive",
+  "weight": "regular"
+ },
+ {
+  "name": "hand.raised",
+  "weight": "regular"
+ },
+ {
+  "name": "text.bubble",
+  "weight": "regular"
+ },
+ {
+  "name": "doc.text",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.up.chevron.down",
+  "weight": "regular"
+ },
+ {
+  "name": "pause.fill",
+  "weight": "semibold"
+ },
+ {
+  "name": "play.fill",
+  "weight": "semibold"
+ },
+ {
+  "name": "chevron.down",
+  "weight": "semibold"
+ }
+]

@@ -1,0 +1,226 @@
+[
+{
+"name": "xmark",
+"weight": "semibold"
+},
+{
+"name": "xmark",
+"weight": "bold"
+},
+{
+"name": "xmark",
+"weight": "regular"
+},
+{
+"name": "stop.fill",
+"weight": "regular"
+},
+{
+"name": "stop.fill",
+"weight": "semibold"
+},
+{
+"name": "pause.fill",
+"weight": "regular"
+},
+{
+"name": "pause.fill",
+"weight": "semibold"
+},
+{
+"name": "play.fill",
+"weight": "semibold"
+},
+{
+"name": "exclamationmark.triangle.fill",
+"weight": "regular"
+},
+{
+"name": "exclamationmark.triangle",
+"weight": "regular"
+},
+{
+"name": "circle.fill",
+"weight": "regular"
+},
+{
+"name": "waveform",
+"weight": "regular"
+},
+{
+"name": "wand.and.sparkles",
+"weight": "regular"
+},
+{
+"name": "chevron.up",
+"weight": "regular"
+},
+{
+"name": "chevron.down",
+"weight": "regular"
+},
+{
+"name": "chevron.right",
+"weight": "regular"
+},
+{
+"name": "chevron.up.chevron.down",
+"weight": "bold"
+},
+{
+"name": "chevron.up.chevron.down",
+"weight": "semibold"
+},
+{
+"name": "keyboard",
+"weight": "semibold"
+},
+{
+"name": "cpu",
+"weight": "regular"
+},
+{
+"name": "arrow.down.circle",
+"weight": "semibold"
+},
+{
+"name": "square.stack.3d.up",
+"weight": "semibold"
+},
+{
+"name": "checkmark.circle.fill",
+"weight": "regular"
+},
+{
+"name": "checkmark.circle.fill",
+"weight": "medium"
+},
+{
+"name": "plus",
+"weight": "bold"
+},
+{
+"name": "plus",
+"weight": "semibold"
+},
+{
+"name": "app.dashed",
+"weight": "regular"
+},
+{
+"name": "largecircle.fill.circle",
+"weight": "semibold"
+},
+{
+"name": "circle",
+"weight": "semibold"
+},
+{
+"name": "checkmark",
+"weight": "bold"
+},
+{
+"name": "mic.fill",
+"weight": "regular"
+},
+{
+"name": "bubble.left.fill",
+"weight": "regular"
+},
+{
+"name": "text.bubble",
+"weight": "regular"
+},
+{
+"name": "pencil.line",
+"weight": "regular"
+},
+{
+"name": "brain.head.profile",
+"weight": "regular"
+},
+{
+"name": "sparkles",
+"weight": "regular"
+},
+{
+"name": "headphones",
+"weight": "regular"
+},
+{
+"name": "person.wave.2",
+"weight": "regular"
+},
+{
+"name": "character.bubble",
+"weight": "regular"
+},
+{
+"name": "doc.text",
+"weight": "regular"
+},
+{
+"name": "arrow.up.forward.square",
+"weight": "regular"
+},
+{
+"name": "icloud",
+"weight": "semibold"
+},
+{
+"name": "arrow.clockwise",
+"weight": "regular"
+},
+{
+"name": "video",
+"weight": "regular"
+},
+{
+"name": "externaldrive",
+"weight": "regular"
+},
+{
+"name": "waveform.path",
+"weight": "regular"
+},
+{
+"name": "folder",
+"weight": "regular"
+},
+{
+"name": "trash",
+"weight": "regular"
+},
+{
+"name": "apple.logo",
+"weight": "medium"
+},
+{
+"name": "arrow.right",
+"weight": "semibold"
+},
+{
+"name": "sun.max",
+"weight": "medium"
+},
+{
+"name": "moon",
+"weight": "medium"
+},
+{
+"name": "moon.fill",
+"weight": "medium"
+},
+{
+"name": "desktopcomputer",
+"weight": "medium"
+},
+{
+"name": "iphone.gen3",
+"weight": "medium"
+},
+{
+"name": "ipad",
+"weight": "medium"
+}
+]

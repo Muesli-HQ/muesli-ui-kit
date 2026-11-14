@@ -1,0 +1,150 @@
+[
+  {
+    "name": "icloud",
+    "weight": "semibold"
+  },
+  {
+    "name": "arrow.triangle.2.circlepath",
+    "weight": "bold"
+  },
+  {
+    "name": "square.and.arrow.down",
+    "weight": "semibold"
+  },
+  {
+    "name": "square.and.pencil",
+    "weight": "medium"
+  },
+  {
+    "name": "square.and.pencil",
+    "weight": "semibold"
+  },
+  {
+    "name": "arrow.up.arrow.down",
+    "weight": "regular"
+  },
+  {
+    "name": "line.3.horizontal.decrease",
+    "weight": "regular"
+  },
+  {
+    "name": "person.wave.2",
+    "weight": "semibold"
+  },
+  {
+    "name": "plus",
+    "weight": "bold"
+  },
+  {
+    "name": "folder.fill",
+    "weight": "regular"
+  },
+  {
+    "name": "folder.badge.plus",
+    "weight": "regular"
+  },
+  {
+    "name": "folder",
+    "weight": "regular"
+  },
+  {
+    "name": "trash",
+    "weight": "regular"
+  },
+  {
+    "name": "arrow.turn.down.right",
+    "weight": "semibold"
+  },
+  {
+    "name": "arrow.triangle.branch",
+    "weight": "semibold"
+  },
+  {
+    "name": "waveform",
+    "weight": "semibold"
+  },
+  {
+    "name": "square.and.arrow.down",
+    "weight": "semibold"
+  },
+  {
+    "name": "xmark",
+    "weight": "medium"
+  },
+  {
+    "name": "video.fill",
+    "weight": "regular"
+  },
+  {
+    "name": "pause.fill",
+    "weight": "semibold"
+  },
+  {
+    "name": "stop.fill",
+    "weight": "semibold"
+  },
+  {
+    "name": "chevron.left",
+    "weight": "semibold"
+  },
+  {
+    "name": "calendar",
+    "weight": "medium"
+  },
+  {
+    "name": "clock",
+    "weight": "medium"
+  },
+  {
+    "name": "doc.text",
+    "weight": "medium"
+  },
+  {
+    "name": "square.and.arrow.up",
+    "weight": "semibold"
+  },
+  {
+    "name": "ellipsis",
+    "weight": "semibold"
+  },
+  {
+    "name": "person.2",
+    "weight": "regular"
+  },
+  {
+    "name": "person.2.fill",
+    "weight": "regular"
+  },
+  {
+    "name": "doc.on.doc",
+    "weight": "semibold"
+  },
+  {
+    "name": "play.fill",
+    "weight": "semibold"
+  },
+  {
+    "name": "checkmark.square",
+    "weight": "regular"
+  },
+  {
+    "name": "square",
+    "weight": "regular"
+  },
+  {
+    "name": "sparkles",
+    "weight": "regular"
+  },
+  {
+    "name": "person.2.wave.2",
+    "weight": "regular"
+  },
+  {
+    "name": "arrow.turn.left.up",
+    "weight": "semibold"
+  },
+  {
+    "name": "arrow.turn.left.down",
+    "weight": "semibold"
+  }
+]

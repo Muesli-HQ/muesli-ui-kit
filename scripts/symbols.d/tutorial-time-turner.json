@@ -1,0 +1,20 @@
+[
+  {"name": "hand.raised.fill", "weight": "medium"},
+  {"name": "gearshape.fill", "weight": "medium"},
+  {"name": "rectangle.dashed.badge.record", "weight": "medium"},
+  {"name": "accessibility", "weight": "medium"},
+  {"name": "lock.fill", "weight": "medium"},
+  {"name": "wifi", "weight": "medium"},
+  {"name": "network", "weight": "medium"},
+  {"name": "bell.badge.fill", "weight": "medium"},
+  {"name": "moon.fill", "weight": "medium"},
+  {"name": "hourglass", "weight": "medium"},
+  {"name": "gearshape", "weight": "medium"},
+  {"name": "chevron.left", "weight": "medium"},
+  {"name": "chevron.right", "weight": "medium"},
+  {"name": "magnifyingglass", "weight": "medium"},
+  {"name": "questionmark.circle", "weight": "regular"},
+  {"name": "minus", "weight": "medium"},
+  {"name": "plus", "weight": "medium"},
+  {"name": "exclamationmark.triangle.fill", "weight": "regular"}
+]

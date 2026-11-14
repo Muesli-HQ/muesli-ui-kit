@@ -1,0 +1,114 @@
+[
+ {
+  "name": "eye.slash",
+  "weight": "medium"
+ },
+ {
+  "name": "line.3.horizontal.decrease",
+  "weight": "regular"
+ },
+ {
+  "name": "square.grid.2x2",
+  "weight": "regular"
+ },
+ {
+  "name": "clock.badge.questionmark",
+  "weight": "thin"
+ },
+ {
+  "name": "mic.badge.plus",
+  "weight": "thin"
+ },
+ {
+  "name": "mic.fill",
+  "weight": "semibold"
+ },
+ {
+  "name": "stop.fill",
+  "weight": "semibold"
+ },
+ {
+  "name": "person.2.fill",
+  "weight": "semibold"
+ },
+ {
+  "name": "person.2.fill",
+  "weight": "regular"
+ },
+ {
+  "name": "flame.fill",
+  "weight": "regular"
+ },
+ {
+  "name": "character.cursor.ibeam",
+  "weight": "regular"
+ },
+ {
+  "name": "gauge.with.dots.needle.33percent",
+  "weight": "regular"
+ },
+ {
+  "name": "doc.on.doc",
+  "weight": "regular"
+ },
+ {
+  "name": "trash",
+  "weight": "regular"
+ },
+ {
+  "name": "checkmark",
+  "weight": "regular"
+ },
+ {
+  "name": "checkmark",
+  "weight": "semibold"
+ },
+ {
+  "name": "chevron.up",
+  "weight": "semibold"
+ },
+ {
+  "name": "list.bullet.clipboard",
+  "weight": "regular"
+ },
+ {
+  "name": "icloud",
+  "weight": "semibold"
+ },
+ {
+  "name": "icloud.slash",
+  "weight": "semibold"
+ },
+ {
+  "name": "arrow.triangle.2.circlepath",
+  "weight": "bold"
+ },
+ {
+  "name": "text.cursor",
+  "weight": "bold"
+ },
+ {
+  "name": "app.dashed",
+  "weight": "regular"
+ },
+ {
+  "name": "video",
+  "weight": "regular"
+ },
+ {
+  "name": "play.circle.fill",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.up.chevron.down",
+  "weight": "semibold"
+ },
+ {
+  "name": "chevron.down",
+  "weight": "regular"
+ },
+ {
+  "name": "chevron.down",
+  "weight": "bold"
+ }
+]

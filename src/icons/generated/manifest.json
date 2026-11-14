@@ -1,0 +1,734 @@
+{
+  "accessibility@medium" : {
+    "h" : 1.1875,
+    "w" : 1.1875
+  },
+  "app.dashed@regular" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "apple.logo@medium" : {
+    "h" : 1.140625,
+    "w" : 0.890625
+  },
+  "arrow.clockwise@bold" : {
+    "h" : 1.265625,
+    "w" : 1.0625
+  },
+  "arrow.clockwise@medium" : {
+    "h" : 1.234375,
+    "w" : 1.046875
+  },
+  "arrow.clockwise@regular" : {
+    "h" : 1.203125,
+    "w" : 1.046875
+  },
+  "arrow.down.circle@semibold" : {
+    "h" : 1.203125,
+    "w" : 1.203125
+  },
+  "arrow.down@bold" : {
+    "h" : 1.109375,
+    "w" : 1.046875
+  },
+  "arrow.right@semibold" : {
+    "h" : 0.953125,
+    "w" : 1.1875
+  },
+  "arrow.triangle.2.circlepath@bold" : {
+    "h" : 1.203125,
+    "w" : 1.234375
+  },
+  "arrow.triangle.branch@semibold" : {
+    "h" : 1.15625,
+    "w" : 1.203125
+  },
+  "arrow.turn.down.right@semibold" : {
+    "h" : 0.96875,
+    "w" : 1.1875
+  },
+  "arrow.turn.left.down@semibold" : {
+    "h" : 1.109375,
+    "w" : 1.046875
+  },
+  "arrow.turn.left.up@semibold" : {
+    "h" : 1.109375,
+    "w" : 1.046875
+  },
+  "arrow.up.arrow.down@regular" : {
+    "h" : 1.09375,
+    "w" : 1.40625
+  },
+  "arrow.up.forward.square@regular" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "arrow.up.left.and.arrow.down.right@regular" : {
+    "h" : 1.078125,
+    "w" : 1.1875
+  },
+  "arrow.up.right@regular" : {
+    "h" : 0.875,
+    "w" : 0.96875
+  },
+  "battery.75percent@regular" : {
+    "h" : 0.8125,
+    "w" : 1.703125
+  },
+  "bell.badge.fill@medium" : {
+    "h" : 1.28125,
+    "w" : 1.15625
+  },
+  "bell.badge@regular" : {
+    "h" : 1.234375,
+    "w" : 1.125
+  },
+  "bell@regular" : {
+    "h" : 1.15625,
+    "w" : 1.125
+  },
+  "brain.head.profile@regular" : {
+    "h" : 1.3125,
+    "w" : 1.234375
+  },
+  "bubble.left.and.bubble.right@medium" : {
+    "h" : 1.3125,
+    "w" : 1.6875
+  },
+  "bubble.left.fill@regular" : {
+    "h" : 1.15625,
+    "w" : 1.328125
+  },
+  "calendar@medium" : {
+    "h" : 1.09375,
+    "w" : 1.25
+  },
+  "calendar@regular" : {
+    "h" : 1.046875,
+    "w" : 1.234375
+  },
+  "character.book.closed@medium" : {
+    "h" : 1.234375,
+    "w" : 1.09375
+  },
+  "character.bubble@regular" : {
+    "h" : 1.15625,
+    "w" : 1.328125
+  },
+  "character.cursor.ibeam@regular" : {
+    "h" : 1.171875,
+    "w" : 1.234375
+  },
+  "chart.bar.xaxis@medium" : {
+    "h" : 1.09375,
+    "w" : 1.375
+  },
+  "checklist@regular" : {
+    "h" : 1.140625,
+    "w" : 1.359375
+  },
+  "checkmark.circle.fill@medium" : {
+    "h" : 1.1875,
+    "w" : 1.1875
+  },
+  "checkmark.circle.fill@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "checkmark.circle.fill@semibold" : {
+    "h" : 1.203125,
+    "w" : 1.203125
+  },
+  "checkmark.square@regular" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "checkmark@bold" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "checkmark@regular" : {
+    "h" : 0.984375,
+    "w" : 1.09375
+  },
+  "checkmark@semibold" : {
+    "h" : 1.03125,
+    "w" : 1.140625
+  },
+  "chevron.down@bold" : {
+    "h" : 0.703125,
+    "w" : 1.15625
+  },
+  "chevron.down@regular" : {
+    "h" : 0.625,
+    "w" : 1.109375
+  },
+  "chevron.down@semibold" : {
+    "h" : 0.6875,
+    "w" : 1.140625
+  },
+  "chevron.left@medium" : {
+    "h" : 1.046875,
+    "w" : 0.75
+  },
+  "chevron.left@regular" : {
+    "h" : 1,
+    "w" : 0.734375
+  },
+  "chevron.left@semibold" : {
+    "h" : 1.0625,
+    "w" : 0.765625
+  },
+  "chevron.right@medium" : {
+    "h" : 1.046875,
+    "w" : 0.75
+  },
+  "chevron.right@regular" : {
+    "h" : 1,
+    "w" : 0.734375
+  },
+  "chevron.right@semibold" : {
+    "h" : 1.0625,
+    "w" : 0.765625
+  },
+  "chevron.up.chevron.down@bold" : {
+    "h" : 1.21875,
+    "w" : 1
+  },
+  "chevron.up.chevron.down@regular" : {
+    "h" : 1.09375,
+    "w" : 0.90625
+  },
+  "chevron.up.chevron.down@semibold" : {
+    "h" : 1.1875,
+    "w" : 0.96875
+  },
+  "chevron.up@regular" : {
+    "h" : 0.625,
+    "w" : 1.109375
+  },
+  "chevron.up@semibold" : {
+    "h" : 0.6875,
+    "w" : 1.140625
+  },
+  "circle.fill@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "circle@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "circle@semibold" : {
+    "h" : 1.203125,
+    "w" : 1.203125
+  },
+  "clock.arrow.circlepath@medium" : {
+    "h" : 1.1875,
+    "w" : 1.203125
+  },
+  "clock.arrow.circlepath@regular" : {
+    "h" : 1.140625,
+    "w" : 1.1875
+  },
+  "clock.badge.questionmark@thin" : {
+    "h" : 1.1875,
+    "w" : 1.28125
+  },
+  "clock@medium" : {
+    "h" : 1.1875,
+    "w" : 1.1875
+  },
+  "command@medium" : {
+    "h" : 1.109375,
+    "w" : 1.1875
+  },
+  "cpu@medium" : {
+    "h" : 1.171875,
+    "w" : 1.25
+  },
+  "cpu@regular" : {
+    "h" : 1.125,
+    "w" : 1.234375
+  },
+  "creditcard@regular" : {
+    "h" : 0.984375,
+    "w" : 1.40625
+  },
+  "desktopcomputer@medium" : {
+    "h" : 1.1875,
+    "w" : 1.4375
+  },
+  "display@regular" : {
+    "h" : 1.125,
+    "w" : 1.421875
+  },
+  "doc.on.clipboard@regular" : {
+    "h" : 1.375,
+    "w" : 1.25
+  },
+  "doc.on.doc@regular" : {
+    "h" : 1.375,
+    "w" : 1.25
+  },
+  "doc.on.doc@semibold" : {
+    "h" : 1.4375,
+    "w" : 1.28125
+  },
+  "doc.text@medium" : {
+    "h" : 1.234375,
+    "w" : 1.09375
+  },
+  "doc.text@regular" : {
+    "h" : 1.203125,
+    "w" : 1.078125
+  },
+  "ellipsis@regular" : {
+    "h" : 0.328125,
+    "w" : 1.09375
+  },
+  "ellipsis@semibold" : {
+    "h" : 0.390625,
+    "w" : 1.125
+  },
+  "exclamationmark.triangle.fill@regular" : {
+    "h" : 1.078125,
+    "w" : 1.234375
+  },
+  "exclamationmark.triangle@regular" : {
+    "h" : 1.078125,
+    "w" : 1.234375
+  },
+  "externaldrive@regular" : {
+    "h" : 0.984375,
+    "w" : 1.40625
+  },
+  "eye.slash@medium" : {
+    "h" : 1.25,
+    "w" : 1.546875
+  },
+  "flame.fill@regular" : {
+    "h" : 1.203125,
+    "w" : 1
+  },
+  "folder.badge.plus@medium" : {
+    "h" : 1.171875,
+    "w" : 1.515625
+  },
+  "folder.badge.plus@regular" : {
+    "h" : 1.125,
+    "w" : 1.515625
+  },
+  "folder.fill@regular" : {
+    "h" : 1.046875,
+    "w" : 1.359375
+  },
+  "folder@medium" : {
+    "h" : 1.09375,
+    "w" : 1.375
+  },
+  "folder@regular" : {
+    "h" : 1.046875,
+    "w" : 1.359375
+  },
+  "gauge.with.dots.needle.33percent@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "gearshape.fill@medium" : {
+    "h" : 1.21875,
+    "w" : 1.21875
+  },
+  "gearshape@medium" : {
+    "h" : 1.234375,
+    "w" : 1.234375
+  },
+  "gearshape@regular" : {
+    "h" : 1.1875,
+    "w" : 1.21875
+  },
+  "hand.raised.fill@medium" : {
+    "h" : 1.25,
+    "w" : 1.203125
+  },
+  "hand.raised@regular" : {
+    "h" : 1.21875,
+    "w" : 1.1875
+  },
+  "headphones@regular" : {
+    "h" : 1.1875,
+    "w" : 1.25
+  },
+  "hourglass@medium" : {
+    "h" : 1.09375,
+    "w" : 0.84375
+  },
+  "icloud.slash@semibold" : {
+    "h" : 1.265625,
+    "w" : 1.4375
+  },
+  "icloud@semibold" : {
+    "h" : 1.0625,
+    "w" : 1.4375
+  },
+  "info.circle@medium" : {
+    "h" : 1.1875,
+    "w" : 1.1875
+  },
+  "info.circle@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "internaldrive@regular" : {
+    "h" : 0.984375,
+    "w" : 1.40625
+  },
+  "ipad@medium" : {
+    "h" : 1.296875,
+    "w" : 1.09375
+  },
+  "iphone.gen3@medium" : {
+    "h" : 1.25,
+    "w" : 1.03125
+  },
+  "keyboard@semibold" : {
+    "h" : 0.984375,
+    "w" : 1.515625
+  },
+  "largecircle.fill.circle@semibold" : {
+    "h" : 1.203125,
+    "w" : 1.203125
+  },
+  "leaf.fill@semibold" : {
+    "h" : 1.109375,
+    "w" : 1.265625
+  },
+  "line.3.horizontal.decrease@regular" : {
+    "h" : 0.734375,
+    "w" : 1.25
+  },
+  "list.bullet.clipboard@regular" : {
+    "h" : 1.390625,
+    "w" : 1.078125
+  },
+  "lock.fill@medium" : {
+    "h" : 1.15625,
+    "w" : 0.96875
+  },
+  "lock@regular" : {
+    "h" : 1.109375,
+    "w" : 0.953125
+  },
+  "macwindow@regular" : {
+    "h" : 1.046875,
+    "w" : 1.40625
+  },
+  "magnifyingglass@medium" : {
+    "h" : 1.15625,
+    "w" : 1.1875
+  },
+  "magnifyingglass@regular" : {
+    "h" : 1.109375,
+    "w" : 1.1875
+  },
+  "mic.badge.plus@thin" : {
+    "h" : 1.1875,
+    "w" : 1.0625
+  },
+  "mic.fill@regular" : {
+    "h" : 1.1875,
+    "w" : 1
+  },
+  "mic.fill@semibold" : {
+    "h" : 1.265625,
+    "w" : 1.0625
+  },
+  "minus@medium" : {
+    "h" : 0.296875,
+    "w" : 1.078125
+  },
+  "moon.fill@medium" : {
+    "h" : 1.1875,
+    "w" : 1.15625
+  },
+  "moon@medium" : {
+    "h" : 1.1875,
+    "w" : 1.15625
+  },
+  "muesli-mark" : {
+    "h" : 513,
+    "w" : 635
+  },
+  "network@medium" : {
+    "h" : 1.1875,
+    "w" : 1.1875
+  },
+  "pause.fill@regular" : {
+    "h" : 0.953125,
+    "w" : 0.859375
+  },
+  "pause.fill@semibold" : {
+    "h" : 1.03125,
+    "w" : 0.90625
+  },
+  "pencil.line@regular" : {
+    "h" : 1.09375,
+    "w" : 1.15625
+  },
+  "person.2.fill@regular" : {
+    "h" : 1.09375,
+    "w" : 1.578125
+  },
+  "person.2.fill@semibold" : {
+    "h" : 1.140625,
+    "w" : 1.59375
+  },
+  "person.2.wave.2@regular" : {
+    "h" : 1.25,
+    "w" : 1.78125
+  },
+  "person.2@medium" : {
+    "h" : 1.15625,
+    "w" : 1.625
+  },
+  "person.2@regular" : {
+    "h" : 1.125,
+    "w" : 1.609375
+  },
+  "person.wave.2@medium" : {
+    "h" : 1.21875,
+    "w" : 1.3125
+  },
+  "person.wave.2@regular" : {
+    "h" : 1.1875,
+    "w" : 1.28125
+  },
+  "person.wave.2@semibold" : {
+    "h" : 1.234375,
+    "w" : 1.34375
+  },
+  "photo@medium" : {
+    "h" : 1.09375,
+    "w" : 1.40625
+  },
+  "photo@regular" : {
+    "h" : 1.046875,
+    "w" : 1.40625
+  },
+  "play.circle.fill@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "play.fill@regular" : {
+    "h" : 0.96875,
+    "w" : 0.890625
+  },
+  "play.fill@semibold" : {
+    "h" : 1.046875,
+    "w" : 0.921875
+  },
+  "plus@bold" : {
+    "h" : 1.015625,
+    "w" : 1.09375
+  },
+  "plus@medium" : {
+    "h" : 1,
+    "w" : 1.078125
+  },
+  "plus@semibold" : {
+    "h" : 1,
+    "w" : 1.078125
+  },
+  "puzzlepiece.extension@regular" : {
+    "h" : 1.09375,
+    "w" : 1.421875
+  },
+  "questionmark.circle@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "record.circle@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "record.circle@semibold" : {
+    "h" : 1.203125,
+    "w" : 1.203125
+  },
+  "rectangle.dashed.badge.record@medium" : {
+    "h" : 1.25,
+    "w" : 1.5625
+  },
+  "rectangle.on.rectangle@regular" : {
+    "h" : 1.140625,
+    "w" : 1.46875
+  },
+  "shippingbox@regular" : {
+    "h" : 1.21875,
+    "w" : 1.25
+  },
+  "sidebar.left@medium" : {
+    "h" : 1.09375,
+    "w" : 1.40625
+  },
+  "sidebar.left@regular" : {
+    "h" : 1.046875,
+    "w" : 1.40625
+  },
+  "sparkles@regular" : {
+    "h" : 1.265625,
+    "w" : 1.109375
+  },
+  "speaker.wave.2.fill@regular" : {
+    "h" : 1.015625,
+    "w" : 1.390625
+  },
+  "square.and.arrow.down@semibold" : {
+    "h" : 1.328125,
+    "w" : 1.15625
+  },
+  "square.and.arrow.up@regular" : {
+    "h" : 1.328125,
+    "w" : 1.125
+  },
+  "square.and.arrow.up@semibold" : {
+    "h" : 1.390625,
+    "w" : 1.15625
+  },
+  "square.and.pencil@medium" : {
+    "h" : 1.234375,
+    "w" : 1.234375
+  },
+  "square.and.pencil@semibold" : {
+    "h" : 1.25,
+    "w" : 1.25
+  },
+  "square.grid.2x2@regular" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "square.on.square@regular" : {
+    "h" : 1.171875,
+    "w" : 1.296875
+  },
+  "square.stack.3d.up@semibold" : {
+    "h" : 1.375,
+    "w" : 1.265625
+  },
+  "square.stack@regular" : {
+    "h" : 1.359375,
+    "w" : 1.109375
+  },
+  "square@regular" : {
+    "h" : 1.046875,
+    "w" : 1.15625
+  },
+  "stop.fill@regular" : {
+    "h" : 0.9375,
+    "w" : 1.046875
+  },
+  "stop.fill@semibold" : {
+    "h" : 1,
+    "w" : 1.078125
+  },
+  "sun.max@medium" : {
+    "h" : 1.265625,
+    "w" : 1.265625
+  },
+  "switch.2@medium" : {
+    "h" : 1.125,
+    "w" : 1.203125
+  },
+  "tag.fill@medium" : {
+    "h" : 1.3125,
+    "w" : 1.34375
+  },
+  "text.bubble@regular" : {
+    "h" : 1.15625,
+    "w" : 1.328125
+  },
+  "text.cursor@bold" : {
+    "h" : 1.25,
+    "w" : 1.328125
+  },
+  "text.page@regular" : {
+    "h" : 1.203125,
+    "w" : 1.078125
+  },
+  "text.viewfinder@regular" : {
+    "h" : 1.109375,
+    "w" : 1.21875
+  },
+  "textformat@regular" : {
+    "h" : 0.875,
+    "w" : 1.375
+  },
+  "time-turner" : {
+    "h" : 20,
+    "w" : 20
+  },
+  "trash@regular" : {
+    "h" : 1.234375,
+    "w" : 1.109375
+  },
+  "tray.2@medium" : {
+    "h" : 1.296875,
+    "w" : 1.421875
+  },
+  "video.fill@regular" : {
+    "h" : 0.9375,
+    "w" : 1.4375
+  },
+  "video.slash@regular" : {
+    "h" : 1.34375,
+    "w" : 1.4375
+  },
+  "video@regular" : {
+    "h" : 0.953125,
+    "w" : 1.4375
+  },
+  "viewfinder@medium" : {
+    "h" : 1.140625,
+    "w" : 1.21875
+  },
+  "wand.and.sparkles@regular" : {
+    "h" : 1.109375,
+    "w" : 1.25
+  },
+  "waveform.path@regular" : {
+    "h" : 1.28125,
+    "w" : 1.40625
+  },
+  "waveform@medium" : {
+    "h" : 1.21875,
+    "w" : 1.1875
+  },
+  "waveform@regular" : {
+    "h" : 1.171875,
+    "w" : 1.15625
+  },
+  "waveform@semibold" : {
+    "h" : 1.234375,
+    "w" : 1.203125
+  },
+  "wifi@medium" : {
+    "h" : 1,
+    "w" : 1.328125
+  },
+  "xmark@bold" : {
+    "h" : 1,
+    "w" : 1.0625
+  },
+  "xmark@medium" : {
+    "h" : 0.96875,
+    "w" : 1.046875
+  },
+  "xmark@regular" : {
+    "h" : 0.9375,
+    "w" : 1.03125
+  },
+  "xmark@semibold" : {
+    "h" : 0.984375,
+    "w" : 1.046875
+  }
+}

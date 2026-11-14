@@ -1,0 +1,16 @@
+[
+  {"name": "record.circle", "weight": "regular"},
+  {"name": "record.circle", "weight": "semibold"},
+  {"name": "display", "weight": "regular"},
+  {"name": "rectangle.on.rectangle", "weight": "regular"},
+  {"name": "textformat", "weight": "regular"},
+  {"name": "chevron.down", "weight": "regular"},
+  {"name": "pause.fill", "weight": "regular"},
+  {"name": "play.fill", "weight": "regular"},
+  {"name": "speaker.wave.2.fill", "weight": "regular"},
+  {"name": "arrow.up.left.and.arrow.down.right", "weight": "regular"},
+  {"name": "xmark", "weight": "medium"},
+  {"name": "doc.on.doc", "weight": "semibold"},
+  {"name": "folder.fill", "weight": "regular"},
+  {"name": "person.2.fill", "weight": "regular"}
+]
