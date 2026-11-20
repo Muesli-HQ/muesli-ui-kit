@@ -50,7 +50,7 @@ export interface LiveMeetingDetailProps {
 }
 
 /** LiveTranscriptBubble (LiveTranscriptView.swift). The hover-only copy button keeps its 18pt slot. */
-const LiveBubble: React.FC<{speaker?: string; timestamp?: string; text: string; isUser: boolean; isPartial: boolean}> = ({speaker, timestamp, text, isUser, isPartial}) => {
+export const LiveBubble: React.FC<{speaker?: string; timestamp?: string; text: string; isUser: boolean; isPartial: boolean}> = ({speaker, timestamp, text, isUser, isPartial}) => {
   const {colors} = useMuesliTheme();
   const bg = isPartial ? (isUser ? opacityOf(colors.accent, 0.06) : opacityOf(colors.surfacePrimary, 0.5)) : isUser ? opacityOf(colors.accent, 0.15) : colors.surfacePrimary;
   const border = isPartial ? colors.surfaceBorder : isUser ? opacityOf(colors.accent, 0.2) : colors.surfaceBorder;

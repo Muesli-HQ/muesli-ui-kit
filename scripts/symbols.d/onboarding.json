@@ -1,0 +1,50 @@
+[
+  {
+    "name": "hand.raised.fill",
+    "weight": "light"
+  },
+  {
+    "name": "keyboard.fill",
+    "weight": "light"
+  },
+  {
+    "name": "keyboard.fill",
+    "weight": "medium"
+  },
+  {
+    "name": "keyboard",
+    "weight": "regular"
+  },
+  {
+    "name": "mic.fill",
+    "weight": "light"
+  },
+  {
+    "name": "person.2.fill",
+    "weight": "medium"
+  },
+  {
+    "name": "rectangle.3.group.fill",
+    "weight": "medium"
+  },
+  {
+    "name": "rectangle.dashed.badge.record",
+    "weight": "light"
+  },
+  {
+    "name": "speaker.wave.2.fill",
+    "weight": "light"
+  },
+  {
+    "name": "hand.tap.fill",
+    "weight": "semibold"
+  },
+  {
+    "name": "arrow.up",
+    "weight": "bold"
+  },
+  {
+    "name": "arrow.down",
+    "weight": "bold"
+  }
+]

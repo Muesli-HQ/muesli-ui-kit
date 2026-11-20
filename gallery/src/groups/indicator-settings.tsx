@@ -4,9 +4,10 @@ import {Composition} from 'remotion';
 import {DashboardContent, layout, type Appearance, type SidebarProps} from '../../../src';
 import {type as T} from '../../../src/typography';
 import {KitFrame} from '../KitFrame';
-import {NotchIndicator, NotchIndicatorBar, NOTCH_MBP_1512, notchFrame, FloatingIndicator, MuesliNotification, TodoReminderNotification, DailyRecapNotification, type NotchPhase, type FloatingPhase} from '../../../src/screens/indicator';
+import {NotchIndicator, NotchIndicatorBar, NOTCH_MBP_1512, notchFrame, FloatingIndicator, MuesliNotification, FloatingIndicatorTransition, floatingTransitionDuration, TodoReminderNotification, DailyRecapNotification, type NotchPhase, type FloatingPhase} from '../../../src/screens/indicator';
 import {CotypistEditor, CotypistSetupGuide} from '../../../src/screens/cotypist';
-import {SettingsPage, type SettingsPaneId} from '../../../src/screens/settings';
+import {SettingsPage, DEFAULT_DICTATION_SETTINGS, DEFAULT_MEETINGS_SETTINGS, DEFAULT_CLEANUP_PROMPT, type SettingsPaneId, type DictationSettingsState} from '../../../src/screens/settings';
+import {APP_ICONS} from '../../../src/screens/timeline/appIcons';
 import {ModelsPage, type ModelsCategoryId} from '../../../src/screens/models';
 import {
   SPEECH_LEVELS,
@@ -129,6 +130,24 @@ const CotypistScene: React.FC<{dark: boolean}> = ({dark}) => (
 
 // ---------------- Settings / Models ----------------
 
+/** Dictations pane as a dictation-heavy user has it: cleanup on, two app rules, suggestions. */
+const DICTATION_SETTINGS: DictationSettingsState = {
+  ...DEFAULT_DICTATION_SETTINGS,
+  dictionarySuggestions: true,
+  cleanup: {enabled: true, preset: 'Default Cleanup', prompt: DEFAULT_CLEANUP_PROMPT, source: 'Local Model', model: 'muesli Cleanup Lite'},
+  formatting: {
+    rules: [
+      {appName: 'Slack', icon: APP_ICONS.slack, template: 'Lowercase chat'},
+      {appName: 'Messages', icon: APP_ICONS.messages, template: 'Casual'},
+    ],
+    suggestions: [
+      {appName: 'Mail', icon: APP_ICONS.mail, sessions: 42},
+      {appName: 'Notes', icon: APP_ICONS.notes, sessions: 18},
+    ],
+  },
+  advanced: {...DEFAULT_DICTATION_SETTINGS.advanced, appContext: true, screenOCR: true},
+};
+
 const SettingsComp: React.FC<{appearance: Appearance; pane: SettingsPaneId; scrollY?: number; downloading?: boolean}> = ({appearance, pane, scrollY, downloading}) => (
   <KitFrame appearance={appearance}>
     <DashboardContent sidebar={sidebar('settings')}>
@@ -138,6 +157,8 @@ const SettingsComp: React.FC<{appearance: Appearance; pane: SettingsPaneId; scro
         general={GENERAL_SETTINGS}
         appearance={appearance === 'light' ? {...APPEARANCE_SETTINGS, theme: 'light'} : APPEARANCE_SETTINGS}
         experimental={downloading ? {...EXPERIMENTAL_SETTINGS, cotypist: COTYPIST_SETTINGS_DOWNLOADING} : EXPERIMENTAL_SETTINGS}
+        dictation={DICTATION_SETTINGS}
+        meetings={DEFAULT_MEETINGS_SETTINGS}
       />
     </DashboardContent>
   </KitFrame>
@@ -166,11 +187,40 @@ const NotificationStates: React.FC = () => (
   </KitFrame>
 );
 
+/** FloatingIndicatorTransition filmstrips: the three moves in the owner's 2026-11-15 capture, at 0 / 25 / 50 / 75 / 100 %. */
+const TRANSITIONS: Array<{label: string; from: React.ComponentProps<typeof FloatingIndicatorTransition>['from']; to: React.ComponentProps<typeof FloatingIndicatorTransition>['to']}> = [
+  {label: 'hover → idle', from: {phase: 'idleHover', hotkeyLabel: 'Left Ctrl'}, to: {phase: 'idle'}},
+  {label: 'recording → transcribing', from: {phase: 'recording', levels: 0.5}, to: {phase: 'transcribing'}},
+  {label: 'transcribing → idle', from: {phase: 'transcribing'}, to: {phase: 'idle'}},
+];
+const FloatingTransitions: React.FC = () => (
+  <KitFrame appearance="dark" background="linear-gradient(135deg, #1f2430, #2a2230)">
+    <div style={{padding: 20, display: 'flex', flexDirection: 'column', gap: 18}}>
+      {TRANSITIONS.map((tr) => {
+        const d = floatingTransitionDuration(tr.from.phase, tr.to.phase);
+        return (
+          <div key={tr.label} style={{display: 'flex', alignItems: 'center', gap: 0}}>
+            <div style={{width: 170, ...T.caption, color: 'rgba(255,255,255,0.6)'}}>{tr.label} · {d}s</div>
+            {[0, 0.25, 0.5, 0.75, 1].map((k) => (
+              <div key={k} style={{width: 250, height: 44, position: 'relative'}}>
+                <div style={{position: 'absolute', left: tr.from.phase === 'idleHover' ? 10 : 125, top: 22}}>
+                  <FloatingIndicatorTransition from={tr.from} to={tr.to} t={k * d} />
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  </KitFrame>
+);
+
 export const Root: React.FC = () => (
   <>
     <Composition id="Notch-states" component={NotchStates} durationInFrames={1} fps={30} width={1512} height={ROW_H * notchRows.length} />
     <Composition id="Notch-closeup" component={NotchCloseup} durationInFrames={1} fps={30} width={960} height={760} />
     <Composition id="Notification-states" component={NotificationStates} durationInFrames={1} fps={30} width={520} height={400} />
+    <Composition id="Floating-transitions" component={FloatingTransitions} durationInFrames={1} fps={30} width={1460} height={240} />
     <Composition id="Floating-states" component={FloatingStates} durationInFrames={1} fps={30} width={760} height={560} />
     <Composition id="Cotypist-light" component={() => <CotypistScene dark={false} />} durationInFrames={1} fps={30} width={1000} height={660} />
     <Composition id="Cotypist-dark" component={() => <CotypistScene dark />} durationInFrames={1} fps={30} width={1000} height={660} />
@@ -180,6 +230,10 @@ export const Root: React.FC = () => (
         <Composition id={`Settings-cotypist-${a}`} component={() => <SettingsComp appearance={a} pane="experimental" scrollY={COTYPIST_SCROLL} />} durationInFrames={1} fps={30} width={W} height={H} />
         <Composition id={`Settings-appearance-${a}`} component={() => <SettingsComp appearance={a} pane="appearance" />} durationInFrames={1} fps={30} width={W} height={H} />
         <Composition id={`Settings-general-${a}`} component={() => <SettingsComp appearance={a} pane="general" />} durationInFrames={1} fps={30} width={W} height={H} />
+        <Composition id={`Settings-dictation-${a}`} component={() => <SettingsComp appearance={a} pane="dictation" />} durationInFrames={1} fps={30} width={W} height={H} />
+        <Composition id={`Settings-dictation-lower-${a}`} component={() => <SettingsComp appearance={a} pane="dictation" scrollY={640} />} durationInFrames={1} fps={30} width={W} height={H} />
+        <Composition id={`Settings-meetings-${a}`} component={() => <SettingsComp appearance={a} pane="meetings" />} durationInFrames={1} fps={30} width={W} height={H} />
+        <Composition id={`Settings-meetings-lower-${a}`} component={() => <SettingsComp appearance={a} pane="meetings" scrollY={900} />} durationInFrames={1} fps={30} width={W} height={H} />
         <Composition id={`Models-dictation-${a}`} component={() => <ModelsComp appearance={a} category="dictation" />} durationInFrames={1} fps={30} width={W} height={H} />
         <Composition id={`Models-cotypist-${a}`} component={() => <ModelsComp appearance={a} category="cotypist" />} durationInFrames={1} fps={30} width={W} height={H} />
       </React.Fragment>

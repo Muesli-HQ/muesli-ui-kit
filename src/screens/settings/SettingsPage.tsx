@@ -1,7 +1,7 @@
 // SettingsView.swift @ v0.8.6 — the Settings page (title, pane picker, panes) with the General, Appearance and
 // Experimental panes ported. Labels: SettingsView.swift + MuesliSettingsDefinitions.swift + Models.swift enums.
-// Experimental also includes TimeTurnerSettingsView.swift (off state). Dictations and Meetings panes are not
-// ported yet (their picker segment still shows).
+// Experimental also includes TimeTurnerSettingsView.swift (off state). Dictations and Meetings panes live in
+// DictationMeetingsPanes.tsx.
 import React from 'react';
 import {useMuesliTheme} from '../../theme/MuesliThemeProvider';
 import {type, font} from '../../typography';
@@ -22,6 +22,7 @@ import {
 } from './controls';
 import {SettingsSection, SettingsRow, SettingsNote, SettingsLayout, CompactActionButton, AccentActionButton, ActionButton} from './SettingsLayout';
 import {RecordingIndicatorStylePicker, type RecordingIndicatorStyle} from './RecordingIndicatorStylePicker';
+import {DictationsPane, MeetingsPane, type DictationSettingsState, type MeetingsSettingsState} from './DictationMeetingsPanes';
 
 export type SettingsPaneId = 'general' | 'dictation' | 'meetings' | 'appearance' | 'experimental';
 export const SETTINGS_PANES: Array<{id: SettingsPaneId; title: string}> = [
@@ -122,6 +123,8 @@ export interface SettingsPageProps {
   general?: GeneralSettingsState;
   appearance?: AppearanceSettingsState;
   experimental?: ExperimentalSettingsState;
+  dictation?: DictationSettingsState;
+  meetings?: MeetingsSettingsState;
 }
 
 // ---------------- Helpers ----------------
@@ -790,7 +793,7 @@ const ExperimentalPane: React.FC<{s: ExperimentalSettingsState}> = ({s}) => {
 // ---------------- Page ----------------
 
 /** The Settings detail page: ScrollView { VStack(spacing 24) { title1 "Settings"; segmented pane picker; pane } }, padding h32, top pageTop, bottom 32. */
-export const SettingsPage: React.FC<SettingsPageProps> = ({pane, scrollY = 0, width = layout.windowWidth - layout.sidebarWidth - 1, general, appearance, experimental}) => {
+export const SettingsPage: React.FC<SettingsPageProps> = ({pane, scrollY = 0, width = layout.windowWidth - layout.sidebarWidth - 1, general, appearance, experimental, dictation, meetings}) => {
   const {colors} = useMuesliTheme();
   const contentWidth = width - 2 * spacing[32];
   const paneIndex = SETTINGS_PANES.findIndex((p) => p.id === pane);
@@ -810,6 +813,8 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({pane, scrollY = 0, wi
           <MacSegmented options={SETTINGS_PANES.map((p) => p.title)} selected={paneIndex} />
         </div>
         {pane === 'general' && general ? <GeneralPane s={general} /> : null}
+        {pane === 'dictation' && dictation ? <DictationsPane s={dictation} /> : null}
+        {pane === 'meetings' && meetings ? <MeetingsPane s={meetings} /> : null}
         {pane === 'appearance' && appearance ? <AppearancePane s={appearance} contentWidth={contentWidth} /> : null}
         {pane === 'experimental' && experimental ? <ExperimentalPane s={experimental} /> : null}
       </div>

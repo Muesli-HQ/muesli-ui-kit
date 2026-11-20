@@ -8,6 +8,7 @@ import {Root as TimeTurnerGroup} from './groups/time-turner';
 import {Root as VidshotsGroup} from './groups/vidshots';
 import {Root as MeetingsChatGroup} from './groups/meetings-chat';
 import {Root as IndicatorSettingsGroup} from './groups/indicator-settings';
+import {Root as OnboardingGroup} from './groups/onboarding';
 
 const sidebar: SidebarProps = {
   selected: 'timeline',
@@ -65,5 +66,6 @@ export const GalleryRoot: React.FC = () => (
     <VidshotsGroup />
     <MeetingsChatGroup />
     <IndicatorSettingsGroup />
+    <OnboardingGroup />
   </>
 );

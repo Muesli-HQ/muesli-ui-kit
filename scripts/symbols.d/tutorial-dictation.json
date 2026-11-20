@@ -1,0 +1,62 @@
+[
+  {
+    "name": "bubble.left",
+    "weight": "regular"
+  },
+  {
+    "name": "plus",
+    "weight": "regular"
+  },
+  {
+    "name": "mic",
+    "weight": "regular"
+  },
+  {
+    "name": "arrow.turn.down.left",
+    "weight": "regular"
+  },
+  {
+    "name": "globe",
+    "weight": "regular"
+  },
+  {
+    "name": "list.bullet",
+    "weight": "regular"
+  },
+  {
+    "name": "chevron.down",
+    "weight": "medium"
+  },
+  {
+    "name": "doc",
+    "weight": "regular"
+  },
+  {
+    "name": "hand.thumbsup",
+    "weight": "regular"
+  },
+  {
+    "name": "hand.thumbsdown",
+    "weight": "regular"
+  },
+  {
+    "name": "speaker.wave.2",
+    "weight": "regular"
+  },
+  {
+    "name": "laptopcomputer",
+    "weight": "regular"
+  },
+  {
+    "name": "chevron.left.forwardslash.chevron.right",
+    "weight": "regular"
+  },
+  {
+    "name": "square.and.pencil",
+    "weight": "regular"
+  },
+  {
+    "name": "archivebox",
+    "weight": "regular"
+  }
+]

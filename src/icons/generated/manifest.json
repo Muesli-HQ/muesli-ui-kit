@@ -11,6 +11,10 @@
     "h" : 1.140625,
     "w" : 0.890625
   },
+  "archivebox@regular" : {
+    "h" : 1.046875,
+    "w" : 1.234375
+  },
   "arrow.clockwise@bold" : {
     "h" : 1.265625,
     "w" : 1.0625
@@ -43,6 +47,10 @@
     "h" : 1.15625,
     "w" : 1.203125
   },
+  "arrow.turn.down.left@regular" : {
+    "h" : 0.921875,
+    "w" : 1.171875
+  },
   "arrow.turn.down.right@semibold" : {
     "h" : 0.96875,
     "w" : 1.1875
@@ -71,6 +79,10 @@
     "h" : 0.875,
     "w" : 0.96875
   },
+  "arrow.up@bold" : {
+    "h" : 1.109375,
+    "w" : 1.046875
+  },
   "battery.75percent@regular" : {
     "h" : 0.8125,
     "w" : 1.703125
@@ -96,6 +108,10 @@
     "w" : 1.6875
   },
   "bubble.left.fill@regular" : {
+    "h" : 1.15625,
+    "w" : 1.328125
+  },
+  "bubble.left@regular" : {
     "h" : 1.15625,
     "w" : 1.328125
   },
@@ -159,6 +175,10 @@
     "h" : 0.703125,
     "w" : 1.15625
   },
+  "chevron.down@medium" : {
+    "h" : 0.671875,
+    "w" : 1.125
+  },
   "chevron.down@regular" : {
     "h" : 0.625,
     "w" : 1.109375
@@ -166,6 +186,10 @@
   "chevron.down@semibold" : {
     "h" : 0.6875,
     "w" : 1.140625
+  },
+  "chevron.left.forwardslash.chevron.right@regular" : {
+    "h" : 1.078125,
+    "w" : 1.625
   },
   "chevron.left@medium" : {
     "h" : 1.046875,
@@ -283,6 +307,10 @@
     "h" : 1.203125,
     "w" : 1.078125
   },
+  "doc@regular" : {
+    "h" : 1.203125,
+    "w" : 1.078125
+  },
   "ellipsis@regular" : {
     "h" : 0.328125,
     "w" : 1.09375
@@ -347,6 +375,14 @@
     "h" : 1.1875,
     "w" : 1.21875
   },
+  "globe@regular" : {
+    "h" : 1.140625,
+    "w" : 1.171875
+  },
+  "hand.raised.fill@light" : {
+    "h" : 1.203125,
+    "w" : 1.171875
+  },
   "hand.raised.fill@medium" : {
     "h" : 1.25,
     "w" : 1.203125
@@ -354,6 +390,18 @@
   "hand.raised@regular" : {
     "h" : 1.21875,
     "w" : 1.1875
+  },
+  "hand.tap.fill@semibold" : {
+    "h" : 1.34375,
+    "w" : 1.1875
+  },
+  "hand.thumbsdown@regular" : {
+    "h" : 1.203125,
+    "w" : 1.171875
+  },
+  "hand.thumbsup@regular" : {
+    "h" : 1.203125,
+    "w" : 1.171875
   },
   "headphones@regular" : {
     "h" : 1.1875,
@@ -391,9 +439,25 @@
     "h" : 1.25,
     "w" : 1.03125
   },
+  "keyboard.fill@light" : {
+    "h" : 0.9375,
+    "w" : 1.46875
+  },
+  "keyboard.fill@medium" : {
+    "h" : 0.96875,
+    "w" : 1.5
+  },
+  "keyboard@regular" : {
+    "h" : 0.921875,
+    "w" : 1.484375
+  },
   "keyboard@semibold" : {
     "h" : 0.984375,
     "w" : 1.515625
+  },
+  "laptopcomputer@regular" : {
+    "h" : 0.9375,
+    "w" : 1.671875
   },
   "largecircle.fill.circle@semibold" : {
     "h" : 1.203125,
@@ -410,6 +474,10 @@
   "list.bullet.clipboard@regular" : {
     "h" : 1.390625,
     "w" : 1.078125
+  },
+  "list.bullet@regular" : {
+    "h" : 0.859375,
+    "w" : 1.234375
   },
   "lock.fill@medium" : {
     "h" : 1.15625,
@@ -435,6 +503,10 @@
     "h" : 1.1875,
     "w" : 1.0625
   },
+  "mic.fill@light" : {
+    "h" : 1.203125,
+    "w" : 0.984375
+  },
   "mic.fill@regular" : {
     "h" : 1.1875,
     "w" : 1
@@ -442,6 +514,10 @@
   "mic.fill@semibold" : {
     "h" : 1.265625,
     "w" : 1.0625
+  },
+  "mic@regular" : {
+    "h" : 1.1875,
+    "w" : 1
   },
   "minus@medium" : {
     "h" : 0.296875,
@@ -474,6 +550,10 @@
   "pencil.line@regular" : {
     "h" : 1.09375,
     "w" : 1.15625
+  },
+  "person.2.fill@medium" : {
+    "h" : 1.140625,
+    "w" : 1.59375
   },
   "person.2.fill@regular" : {
     "h" : 1.09375,
@@ -535,6 +615,10 @@
     "h" : 1,
     "w" : 1.078125
   },
+  "plus@regular" : {
+    "h" : 0.953125,
+    "w" : 1.0625
+  },
   "plus@semibold" : {
     "h" : 1,
     "w" : 1.078125
@@ -554,6 +638,14 @@
   "record.circle@semibold" : {
     "h" : 1.203125,
     "w" : 1.203125
+  },
+  "rectangle.3.group.fill@medium" : {
+    "h" : 1.09375,
+    "w" : 1.625
+  },
+  "rectangle.dashed.badge.record@light" : {
+    "h" : 1.21875,
+    "w" : 1.546875
   },
   "rectangle.dashed.badge.record@medium" : {
     "h" : 1.25,
@@ -575,11 +667,23 @@
     "h" : 1.046875,
     "w" : 1.40625
   },
+  "slider.horizontal.3@semibold" : {
+    "h" : 1.0625,
+    "w" : 1.28125
+  },
   "sparkles@regular" : {
     "h" : 1.265625,
     "w" : 1.109375
   },
+  "speaker.wave.2.fill@light" : {
+    "h" : 1.015625,
+    "w" : 1.359375
+  },
   "speaker.wave.2.fill@regular" : {
+    "h" : 1.015625,
+    "w" : 1.390625
+  },
+  "speaker.wave.2@regular" : {
     "h" : 1.015625,
     "w" : 1.390625
   },
@@ -598,6 +702,10 @@
   "square.and.pencil@medium" : {
     "h" : 1.234375,
     "w" : 1.234375
+  },
+  "square.and.pencil@regular" : {
+    "h" : 1.1875,
+    "w" : 1.21875
   },
   "square.and.pencil@semibold" : {
     "h" : 1.25,

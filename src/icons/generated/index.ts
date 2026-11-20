@@ -2,371 +2,425 @@
 import g0 from './accessibility@medium.png';
 import g1 from './app.dashed@regular.png';
 import g2 from './apple.logo@medium.png';
-import g3 from './arrow.clockwise@bold.png';
-import g4 from './arrow.clockwise@medium.png';
-import g5 from './arrow.clockwise@regular.png';
-import g6 from './arrow.down.circle@semibold.png';
-import g7 from './arrow.down@bold.png';
-import g8 from './arrow.right@semibold.png';
-import g9 from './arrow.triangle.2.circlepath@bold.png';
-import g10 from './arrow.triangle.branch@semibold.png';
-import g11 from './arrow.turn.down.right@semibold.png';
-import g12 from './arrow.turn.left.down@semibold.png';
-import g13 from './arrow.turn.left.up@semibold.png';
-import g14 from './arrow.up.arrow.down@regular.png';
-import g15 from './arrow.up.forward.square@regular.png';
-import g16 from './arrow.up.left.and.arrow.down.right@regular.png';
-import g17 from './arrow.up.right@regular.png';
-import g18 from './battery.75percent@regular.png';
-import g19 from './bell.badge.fill@medium.png';
-import g20 from './bell.badge@regular.png';
-import g21 from './bell@regular.png';
-import g22 from './brain.head.profile@regular.png';
-import g23 from './bubble.left.and.bubble.right@medium.png';
-import g24 from './bubble.left.fill@regular.png';
-import g25 from './calendar@medium.png';
-import g26 from './calendar@regular.png';
-import g27 from './character.book.closed@medium.png';
-import g28 from './character.bubble@regular.png';
-import g29 from './character.cursor.ibeam@regular.png';
-import g30 from './chart.bar.xaxis@medium.png';
-import g31 from './checklist@regular.png';
-import g32 from './checkmark.circle.fill@medium.png';
-import g33 from './checkmark.circle.fill@regular.png';
-import g34 from './checkmark.circle.fill@semibold.png';
-import g35 from './checkmark.square@regular.png';
-import g36 from './checkmark@bold.png';
-import g37 from './checkmark@regular.png';
-import g38 from './checkmark@semibold.png';
-import g39 from './chevron.down@bold.png';
-import g40 from './chevron.down@regular.png';
-import g41 from './chevron.down@semibold.png';
-import g42 from './chevron.left@medium.png';
-import g43 from './chevron.left@regular.png';
-import g44 from './chevron.left@semibold.png';
-import g45 from './chevron.right@medium.png';
-import g46 from './chevron.right@regular.png';
-import g47 from './chevron.right@semibold.png';
-import g48 from './chevron.up.chevron.down@bold.png';
-import g49 from './chevron.up.chevron.down@regular.png';
-import g50 from './chevron.up.chevron.down@semibold.png';
-import g51 from './chevron.up@regular.png';
-import g52 from './chevron.up@semibold.png';
-import g53 from './circle.fill@regular.png';
-import g54 from './circle@regular.png';
-import g55 from './circle@semibold.png';
-import g56 from './clock.arrow.circlepath@medium.png';
-import g57 from './clock.arrow.circlepath@regular.png';
-import g58 from './clock.badge.questionmark@thin.png';
-import g59 from './clock@medium.png';
-import g60 from './command@medium.png';
-import g61 from './cpu@medium.png';
-import g62 from './cpu@regular.png';
-import g63 from './creditcard@regular.png';
-import g64 from './desktopcomputer@medium.png';
-import g65 from './display@regular.png';
-import g66 from './doc.on.clipboard@regular.png';
-import g67 from './doc.on.doc@regular.png';
-import g68 from './doc.on.doc@semibold.png';
-import g69 from './doc.text@medium.png';
-import g70 from './doc.text@regular.png';
-import g71 from './ellipsis@regular.png';
-import g72 from './ellipsis@semibold.png';
-import g73 from './exclamationmark.triangle.fill@regular.png';
-import g74 from './exclamationmark.triangle@regular.png';
-import g75 from './externaldrive@regular.png';
-import g76 from './eye.slash@medium.png';
-import g77 from './flame.fill@regular.png';
-import g78 from './folder.badge.plus@medium.png';
-import g79 from './folder.badge.plus@regular.png';
-import g80 from './folder.fill@regular.png';
-import g81 from './folder@medium.png';
-import g82 from './folder@regular.png';
-import g83 from './gauge.with.dots.needle.33percent@regular.png';
-import g84 from './gearshape.fill@medium.png';
-import g85 from './gearshape@medium.png';
-import g86 from './gearshape@regular.png';
-import g87 from './hand.raised.fill@medium.png';
-import g88 from './hand.raised@regular.png';
-import g89 from './headphones@regular.png';
-import g90 from './hourglass@medium.png';
-import g91 from './icloud.slash@semibold.png';
-import g92 from './icloud@semibold.png';
-import g93 from './info.circle@medium.png';
-import g94 from './info.circle@regular.png';
-import g95 from './internaldrive@regular.png';
-import g96 from './ipad@medium.png';
-import g97 from './iphone.gen3@medium.png';
-import g98 from './keyboard@semibold.png';
-import g99 from './largecircle.fill.circle@semibold.png';
-import g100 from './leaf.fill@semibold.png';
-import g101 from './line.3.horizontal.decrease@regular.png';
-import g102 from './list.bullet.clipboard@regular.png';
-import g103 from './lock.fill@medium.png';
-import g104 from './lock@regular.png';
-import g105 from './macwindow@regular.png';
-import g106 from './magnifyingglass@medium.png';
-import g107 from './magnifyingglass@regular.png';
-import g108 from './mic.badge.plus@thin.png';
-import g109 from './mic.fill@regular.png';
-import g110 from './mic.fill@semibold.png';
-import g111 from './minus@medium.png';
-import g112 from './moon.fill@medium.png';
-import g113 from './moon@medium.png';
-import g114 from './muesli-mark.png';
-import g115 from './network@medium.png';
-import g116 from './pause.fill@regular.png';
-import g117 from './pause.fill@semibold.png';
-import g118 from './pencil.line@regular.png';
-import g119 from './person.2.fill@regular.png';
-import g120 from './person.2.fill@semibold.png';
-import g121 from './person.2.wave.2@regular.png';
-import g122 from './person.2@medium.png';
-import g123 from './person.2@regular.png';
-import g124 from './person.wave.2@medium.png';
-import g125 from './person.wave.2@regular.png';
-import g126 from './person.wave.2@semibold.png';
-import g127 from './photo@medium.png';
-import g128 from './photo@regular.png';
-import g129 from './play.circle.fill@regular.png';
-import g130 from './play.fill@regular.png';
-import g131 from './play.fill@semibold.png';
-import g132 from './plus@bold.png';
-import g133 from './plus@medium.png';
-import g134 from './plus@semibold.png';
-import g135 from './puzzlepiece.extension@regular.png';
-import g136 from './questionmark.circle@regular.png';
-import g137 from './record.circle@regular.png';
-import g138 from './record.circle@semibold.png';
-import g139 from './rectangle.dashed.badge.record@medium.png';
-import g140 from './rectangle.on.rectangle@regular.png';
-import g141 from './shippingbox@regular.png';
-import g142 from './sidebar.left@medium.png';
-import g143 from './sidebar.left@regular.png';
-import g144 from './sparkles@regular.png';
-import g145 from './speaker.wave.2.fill@regular.png';
-import g146 from './square.and.arrow.down@semibold.png';
-import g147 from './square.and.arrow.up@regular.png';
-import g148 from './square.and.arrow.up@semibold.png';
-import g149 from './square.and.pencil@medium.png';
-import g150 from './square.and.pencil@semibold.png';
-import g151 from './square.grid.2x2@regular.png';
-import g152 from './square.on.square@regular.png';
-import g153 from './square.stack.3d.up@semibold.png';
-import g154 from './square.stack@regular.png';
-import g155 from './square@regular.png';
-import g156 from './stop.fill@regular.png';
-import g157 from './stop.fill@semibold.png';
-import g158 from './sun.max@medium.png';
-import g159 from './switch.2@medium.png';
-import g160 from './tag.fill@medium.png';
-import g161 from './text.bubble@regular.png';
-import g162 from './text.cursor@bold.png';
-import g163 from './text.page@regular.png';
-import g164 from './text.viewfinder@regular.png';
-import g165 from './textformat@regular.png';
-import g166 from './time-turner.png';
-import g167 from './trash@regular.png';
-import g168 from './tray.2@medium.png';
-import g169 from './video.fill@regular.png';
-import g170 from './video.slash@regular.png';
-import g171 from './video@regular.png';
-import g172 from './viewfinder@medium.png';
-import g173 from './wand.and.sparkles@regular.png';
-import g174 from './waveform.path@regular.png';
-import g175 from './waveform@medium.png';
-import g176 from './waveform@regular.png';
-import g177 from './waveform@semibold.png';
-import g178 from './wifi@medium.png';
-import g179 from './xmark@bold.png';
-import g180 from './xmark@medium.png';
-import g181 from './xmark@regular.png';
-import g182 from './xmark@semibold.png';
+import g3 from './archivebox@regular.png';
+import g4 from './arrow.clockwise@bold.png';
+import g5 from './arrow.clockwise@medium.png';
+import g6 from './arrow.clockwise@regular.png';
+import g7 from './arrow.down.circle@semibold.png';
+import g8 from './arrow.down@bold.png';
+import g9 from './arrow.right@semibold.png';
+import g10 from './arrow.triangle.2.circlepath@bold.png';
+import g11 from './arrow.triangle.branch@semibold.png';
+import g12 from './arrow.turn.down.left@regular.png';
+import g13 from './arrow.turn.down.right@semibold.png';
+import g14 from './arrow.turn.left.down@semibold.png';
+import g15 from './arrow.turn.left.up@semibold.png';
+import g16 from './arrow.up.arrow.down@regular.png';
+import g17 from './arrow.up.forward.square@regular.png';
+import g18 from './arrow.up.left.and.arrow.down.right@regular.png';
+import g19 from './arrow.up.right@regular.png';
+import g20 from './arrow.up@bold.png';
+import g21 from './battery.75percent@regular.png';
+import g22 from './bell.badge.fill@medium.png';
+import g23 from './bell.badge@regular.png';
+import g24 from './bell@regular.png';
+import g25 from './brain.head.profile@regular.png';
+import g26 from './bubble.left.and.bubble.right@medium.png';
+import g27 from './bubble.left.fill@regular.png';
+import g28 from './bubble.left@regular.png';
+import g29 from './calendar@medium.png';
+import g30 from './calendar@regular.png';
+import g31 from './character.book.closed@medium.png';
+import g32 from './character.bubble@regular.png';
+import g33 from './character.cursor.ibeam@regular.png';
+import g34 from './chart.bar.xaxis@medium.png';
+import g35 from './checklist@regular.png';
+import g36 from './checkmark.circle.fill@medium.png';
+import g37 from './checkmark.circle.fill@regular.png';
+import g38 from './checkmark.circle.fill@semibold.png';
+import g39 from './checkmark.square@regular.png';
+import g40 from './checkmark@bold.png';
+import g41 from './checkmark@regular.png';
+import g42 from './checkmark@semibold.png';
+import g43 from './chevron.down@bold.png';
+import g44 from './chevron.down@medium.png';
+import g45 from './chevron.down@regular.png';
+import g46 from './chevron.down@semibold.png';
+import g47 from './chevron.left.forwardslash.chevron.right@regular.png';
+import g48 from './chevron.left@medium.png';
+import g49 from './chevron.left@regular.png';
+import g50 from './chevron.left@semibold.png';
+import g51 from './chevron.right@medium.png';
+import g52 from './chevron.right@regular.png';
+import g53 from './chevron.right@semibold.png';
+import g54 from './chevron.up.chevron.down@bold.png';
+import g55 from './chevron.up.chevron.down@regular.png';
+import g56 from './chevron.up.chevron.down@semibold.png';
+import g57 from './chevron.up@regular.png';
+import g58 from './chevron.up@semibold.png';
+import g59 from './circle.fill@regular.png';
+import g60 from './circle@regular.png';
+import g61 from './circle@semibold.png';
+import g62 from './clock.arrow.circlepath@medium.png';
+import g63 from './clock.arrow.circlepath@regular.png';
+import g64 from './clock.badge.questionmark@thin.png';
+import g65 from './clock@medium.png';
+import g66 from './command@medium.png';
+import g67 from './cpu@medium.png';
+import g68 from './cpu@regular.png';
+import g69 from './creditcard@regular.png';
+import g70 from './desktopcomputer@medium.png';
+import g71 from './display@regular.png';
+import g72 from './doc.on.clipboard@regular.png';
+import g73 from './doc.on.doc@regular.png';
+import g74 from './doc.on.doc@semibold.png';
+import g75 from './doc.text@medium.png';
+import g76 from './doc.text@regular.png';
+import g77 from './doc@regular.png';
+import g78 from './ellipsis@regular.png';
+import g79 from './ellipsis@semibold.png';
+import g80 from './exclamationmark.triangle.fill@regular.png';
+import g81 from './exclamationmark.triangle@regular.png';
+import g82 from './externaldrive@regular.png';
+import g83 from './eye.slash@medium.png';
+import g84 from './flame.fill@regular.png';
+import g85 from './folder.badge.plus@medium.png';
+import g86 from './folder.badge.plus@regular.png';
+import g87 from './folder.fill@regular.png';
+import g88 from './folder@medium.png';
+import g89 from './folder@regular.png';
+import g90 from './gauge.with.dots.needle.33percent@regular.png';
+import g91 from './gearshape.fill@medium.png';
+import g92 from './gearshape@medium.png';
+import g93 from './gearshape@regular.png';
+import g94 from './globe@regular.png';
+import g95 from './hand.raised.fill@light.png';
+import g96 from './hand.raised.fill@medium.png';
+import g97 from './hand.raised@regular.png';
+import g98 from './hand.tap.fill@semibold.png';
+import g99 from './hand.thumbsdown@regular.png';
+import g100 from './hand.thumbsup@regular.png';
+import g101 from './headphones@regular.png';
+import g102 from './hourglass@medium.png';
+import g103 from './icloud.slash@semibold.png';
+import g104 from './icloud@semibold.png';
+import g105 from './info.circle@medium.png';
+import g106 from './info.circle@regular.png';
+import g107 from './internaldrive@regular.png';
+import g108 from './ipad@medium.png';
+import g109 from './iphone.gen3@medium.png';
+import g110 from './keyboard.fill@light.png';
+import g111 from './keyboard.fill@medium.png';
+import g112 from './keyboard@regular.png';
+import g113 from './keyboard@semibold.png';
+import g114 from './laptopcomputer@regular.png';
+import g115 from './largecircle.fill.circle@semibold.png';
+import g116 from './leaf.fill@semibold.png';
+import g117 from './line.3.horizontal.decrease@regular.png';
+import g118 from './list.bullet.clipboard@regular.png';
+import g119 from './list.bullet@regular.png';
+import g120 from './lock.fill@medium.png';
+import g121 from './lock@regular.png';
+import g122 from './macwindow@regular.png';
+import g123 from './magnifyingglass@medium.png';
+import g124 from './magnifyingglass@regular.png';
+import g125 from './mic.badge.plus@thin.png';
+import g126 from './mic.fill@light.png';
+import g127 from './mic.fill@regular.png';
+import g128 from './mic.fill@semibold.png';
+import g129 from './mic@regular.png';
+import g130 from './minus@medium.png';
+import g131 from './moon.fill@medium.png';
+import g132 from './moon@medium.png';
+import g133 from './muesli-mark.png';
+import g134 from './network@medium.png';
+import g135 from './pause.fill@regular.png';
+import g136 from './pause.fill@semibold.png';
+import g137 from './pencil.line@regular.png';
+import g138 from './person.2.fill@medium.png';
+import g139 from './person.2.fill@regular.png';
+import g140 from './person.2.fill@semibold.png';
+import g141 from './person.2.wave.2@regular.png';
+import g142 from './person.2@medium.png';
+import g143 from './person.2@regular.png';
+import g144 from './person.wave.2@medium.png';
+import g145 from './person.wave.2@regular.png';
+import g146 from './person.wave.2@semibold.png';
+import g147 from './photo@medium.png';
+import g148 from './photo@regular.png';
+import g149 from './play.circle.fill@regular.png';
+import g150 from './play.fill@regular.png';
+import g151 from './play.fill@semibold.png';
+import g152 from './plus@bold.png';
+import g153 from './plus@medium.png';
+import g154 from './plus@regular.png';
+import g155 from './plus@semibold.png';
+import g156 from './puzzlepiece.extension@regular.png';
+import g157 from './questionmark.circle@regular.png';
+import g158 from './record.circle@regular.png';
+import g159 from './record.circle@semibold.png';
+import g160 from './rectangle.3.group.fill@medium.png';
+import g161 from './rectangle.dashed.badge.record@light.png';
+import g162 from './rectangle.dashed.badge.record@medium.png';
+import g163 from './rectangle.on.rectangle@regular.png';
+import g164 from './shippingbox@regular.png';
+import g165 from './sidebar.left@medium.png';
+import g166 from './sidebar.left@regular.png';
+import g167 from './slider.horizontal.3@semibold.png';
+import g168 from './sparkles@regular.png';
+import g169 from './speaker.wave.2.fill@light.png';
+import g170 from './speaker.wave.2.fill@regular.png';
+import g171 from './speaker.wave.2@regular.png';
+import g172 from './square.and.arrow.down@semibold.png';
+import g173 from './square.and.arrow.up@regular.png';
+import g174 from './square.and.arrow.up@semibold.png';
+import g175 from './square.and.pencil@medium.png';
+import g176 from './square.and.pencil@regular.png';
+import g177 from './square.and.pencil@semibold.png';
+import g178 from './square.grid.2x2@regular.png';
+import g179 from './square.on.square@regular.png';
+import g180 from './square.stack.3d.up@semibold.png';
+import g181 from './square.stack@regular.png';
+import g182 from './square@regular.png';
+import g183 from './stop.fill@regular.png';
+import g184 from './stop.fill@semibold.png';
+import g185 from './sun.max@medium.png';
+import g186 from './switch.2@medium.png';
+import g187 from './tag.fill@medium.png';
+import g188 from './text.bubble@regular.png';
+import g189 from './text.cursor@bold.png';
+import g190 from './text.page@regular.png';
+import g191 from './text.viewfinder@regular.png';
+import g192 from './textformat@regular.png';
+import g193 from './time-turner.png';
+import g194 from './trash@regular.png';
+import g195 from './tray.2@medium.png';
+import g196 from './video.fill@regular.png';
+import g197 from './video.slash@regular.png';
+import g198 from './video@regular.png';
+import g199 from './viewfinder@medium.png';
+import g200 from './wand.and.sparkles@regular.png';
+import g201 from './waveform.path@regular.png';
+import g202 from './waveform@medium.png';
+import g203 from './waveform@regular.png';
+import g204 from './waveform@semibold.png';
+import g205 from './wifi@medium.png';
+import g206 from './xmark@bold.png';
+import g207 from './xmark@medium.png';
+import g208 from './xmark@regular.png';
+import g209 from './xmark@semibold.png';
 
 export const glyphs = {
   'accessibility@medium': {src: g0 as string, w: 1.1875, h: 1.1875},
   'app.dashed@regular': {src: g1 as string, w: 1.15625, h: 1.046875},
   'apple.logo@medium': {src: g2 as string, w: 0.890625, h: 1.140625},
-  'arrow.clockwise@bold': {src: g3 as string, w: 1.0625, h: 1.265625},
-  'arrow.clockwise@medium': {src: g4 as string, w: 1.046875, h: 1.234375},
-  'arrow.clockwise@regular': {src: g5 as string, w: 1.046875, h: 1.203125},
-  'arrow.down.circle@semibold': {src: g6 as string, w: 1.203125, h: 1.203125},
-  'arrow.down@bold': {src: g7 as string, w: 1.046875, h: 1.109375},
-  'arrow.right@semibold': {src: g8 as string, w: 1.1875, h: 0.953125},
-  'arrow.triangle.2.circlepath@bold': {src: g9 as string, w: 1.234375, h: 1.203125},
-  'arrow.triangle.branch@semibold': {src: g10 as string, w: 1.203125, h: 1.15625},
-  'arrow.turn.down.right@semibold': {src: g11 as string, w: 1.1875, h: 0.96875},
-  'arrow.turn.left.down@semibold': {src: g12 as string, w: 1.046875, h: 1.109375},
-  'arrow.turn.left.up@semibold': {src: g13 as string, w: 1.046875, h: 1.109375},
-  'arrow.up.arrow.down@regular': {src: g14 as string, w: 1.40625, h: 1.09375},
-  'arrow.up.forward.square@regular': {src: g15 as string, w: 1.15625, h: 1.046875},
-  'arrow.up.left.and.arrow.down.right@regular': {src: g16 as string, w: 1.1875, h: 1.078125},
-  'arrow.up.right@regular': {src: g17 as string, w: 0.96875, h: 0.875},
-  'battery.75percent@regular': {src: g18 as string, w: 1.703125, h: 0.8125},
-  'bell.badge.fill@medium': {src: g19 as string, w: 1.15625, h: 1.28125},
-  'bell.badge@regular': {src: g20 as string, w: 1.125, h: 1.234375},
-  'bell@regular': {src: g21 as string, w: 1.125, h: 1.15625},
-  'brain.head.profile@regular': {src: g22 as string, w: 1.234375, h: 1.3125},
-  'bubble.left.and.bubble.right@medium': {src: g23 as string, w: 1.6875, h: 1.3125},
-  'bubble.left.fill@regular': {src: g24 as string, w: 1.328125, h: 1.15625},
-  'calendar@medium': {src: g25 as string, w: 1.25, h: 1.09375},
-  'calendar@regular': {src: g26 as string, w: 1.234375, h: 1.046875},
-  'character.book.closed@medium': {src: g27 as string, w: 1.09375, h: 1.234375},
-  'character.bubble@regular': {src: g28 as string, w: 1.328125, h: 1.15625},
-  'character.cursor.ibeam@regular': {src: g29 as string, w: 1.234375, h: 1.171875},
-  'chart.bar.xaxis@medium': {src: g30 as string, w: 1.375, h: 1.09375},
-  'checklist@regular': {src: g31 as string, w: 1.359375, h: 1.140625},
-  'checkmark.circle.fill@medium': {src: g32 as string, w: 1.1875, h: 1.1875},
-  'checkmark.circle.fill@regular': {src: g33 as string, w: 1.171875, h: 1.140625},
-  'checkmark.circle.fill@semibold': {src: g34 as string, w: 1.203125, h: 1.203125},
-  'checkmark.square@regular': {src: g35 as string, w: 1.15625, h: 1.046875},
-  'checkmark@bold': {src: g36 as string, w: 1.15625, h: 1.046875},
-  'checkmark@regular': {src: g37 as string, w: 1.09375, h: 0.984375},
-  'checkmark@semibold': {src: g38 as string, w: 1.140625, h: 1.03125},
-  'chevron.down@bold': {src: g39 as string, w: 1.15625, h: 0.703125},
-  'chevron.down@regular': {src: g40 as string, w: 1.109375, h: 0.625},
-  'chevron.down@semibold': {src: g41 as string, w: 1.140625, h: 0.6875},
-  'chevron.left@medium': {src: g42 as string, w: 0.75, h: 1.046875},
-  'chevron.left@regular': {src: g43 as string, w: 0.734375, h: 1.0},
-  'chevron.left@semibold': {src: g44 as string, w: 0.765625, h: 1.0625},
-  'chevron.right@medium': {src: g45 as string, w: 0.75, h: 1.046875},
-  'chevron.right@regular': {src: g46 as string, w: 0.734375, h: 1.0},
-  'chevron.right@semibold': {src: g47 as string, w: 0.765625, h: 1.0625},
-  'chevron.up.chevron.down@bold': {src: g48 as string, w: 1.0, h: 1.21875},
-  'chevron.up.chevron.down@regular': {src: g49 as string, w: 0.90625, h: 1.09375},
-  'chevron.up.chevron.down@semibold': {src: g50 as string, w: 0.96875, h: 1.1875},
-  'chevron.up@regular': {src: g51 as string, w: 1.109375, h: 0.625},
-  'chevron.up@semibold': {src: g52 as string, w: 1.140625, h: 0.6875},
-  'circle.fill@regular': {src: g53 as string, w: 1.171875, h: 1.140625},
-  'circle@regular': {src: g54 as string, w: 1.171875, h: 1.140625},
-  'circle@semibold': {src: g55 as string, w: 1.203125, h: 1.203125},
-  'clock.arrow.circlepath@medium': {src: g56 as string, w: 1.203125, h: 1.1875},
-  'clock.arrow.circlepath@regular': {src: g57 as string, w: 1.1875, h: 1.140625},
-  'clock.badge.questionmark@thin': {src: g58 as string, w: 1.28125, h: 1.1875},
-  'clock@medium': {src: g59 as string, w: 1.1875, h: 1.1875},
-  'command@medium': {src: g60 as string, w: 1.1875, h: 1.109375},
-  'cpu@medium': {src: g61 as string, w: 1.25, h: 1.171875},
-  'cpu@regular': {src: g62 as string, w: 1.234375, h: 1.125},
-  'creditcard@regular': {src: g63 as string, w: 1.40625, h: 0.984375},
-  'desktopcomputer@medium': {src: g64 as string, w: 1.4375, h: 1.1875},
-  'display@regular': {src: g65 as string, w: 1.421875, h: 1.125},
-  'doc.on.clipboard@regular': {src: g66 as string, w: 1.25, h: 1.375},
-  'doc.on.doc@regular': {src: g67 as string, w: 1.25, h: 1.375},
-  'doc.on.doc@semibold': {src: g68 as string, w: 1.28125, h: 1.4375},
-  'doc.text@medium': {src: g69 as string, w: 1.09375, h: 1.234375},
-  'doc.text@regular': {src: g70 as string, w: 1.078125, h: 1.203125},
-  'ellipsis@regular': {src: g71 as string, w: 1.09375, h: 0.328125},
-  'ellipsis@semibold': {src: g72 as string, w: 1.125, h: 0.390625},
-  'exclamationmark.triangle.fill@regular': {src: g73 as string, w: 1.234375, h: 1.078125},
-  'exclamationmark.triangle@regular': {src: g74 as string, w: 1.234375, h: 1.078125},
-  'externaldrive@regular': {src: g75 as string, w: 1.40625, h: 0.984375},
-  'eye.slash@medium': {src: g76 as string, w: 1.546875, h: 1.25},
-  'flame.fill@regular': {src: g77 as string, w: 1.0, h: 1.203125},
-  'folder.badge.plus@medium': {src: g78 as string, w: 1.515625, h: 1.171875},
-  'folder.badge.plus@regular': {src: g79 as string, w: 1.515625, h: 1.125},
-  'folder.fill@regular': {src: g80 as string, w: 1.359375, h: 1.046875},
-  'folder@medium': {src: g81 as string, w: 1.375, h: 1.09375},
-  'folder@regular': {src: g82 as string, w: 1.359375, h: 1.046875},
-  'gauge.with.dots.needle.33percent@regular': {src: g83 as string, w: 1.171875, h: 1.140625},
-  'gearshape.fill@medium': {src: g84 as string, w: 1.21875, h: 1.21875},
-  'gearshape@medium': {src: g85 as string, w: 1.234375, h: 1.234375},
-  'gearshape@regular': {src: g86 as string, w: 1.21875, h: 1.1875},
-  'hand.raised.fill@medium': {src: g87 as string, w: 1.203125, h: 1.25},
-  'hand.raised@regular': {src: g88 as string, w: 1.1875, h: 1.21875},
-  'headphones@regular': {src: g89 as string, w: 1.25, h: 1.1875},
-  'hourglass@medium': {src: g90 as string, w: 0.84375, h: 1.09375},
-  'icloud.slash@semibold': {src: g91 as string, w: 1.4375, h: 1.265625},
-  'icloud@semibold': {src: g92 as string, w: 1.4375, h: 1.0625},
-  'info.circle@medium': {src: g93 as string, w: 1.1875, h: 1.1875},
-  'info.circle@regular': {src: g94 as string, w: 1.171875, h: 1.140625},
-  'internaldrive@regular': {src: g95 as string, w: 1.40625, h: 0.984375},
-  'ipad@medium': {src: g96 as string, w: 1.09375, h: 1.296875},
-  'iphone.gen3@medium': {src: g97 as string, w: 1.03125, h: 1.25},
-  'keyboard@semibold': {src: g98 as string, w: 1.515625, h: 0.984375},
-  'largecircle.fill.circle@semibold': {src: g99 as string, w: 1.203125, h: 1.203125},
-  'leaf.fill@semibold': {src: g100 as string, w: 1.265625, h: 1.109375},
-  'line.3.horizontal.decrease@regular': {src: g101 as string, w: 1.25, h: 0.734375},
-  'list.bullet.clipboard@regular': {src: g102 as string, w: 1.078125, h: 1.390625},
-  'lock.fill@medium': {src: g103 as string, w: 0.96875, h: 1.15625},
-  'lock@regular': {src: g104 as string, w: 0.953125, h: 1.109375},
-  'macwindow@regular': {src: g105 as string, w: 1.40625, h: 1.046875},
-  'magnifyingglass@medium': {src: g106 as string, w: 1.1875, h: 1.15625},
-  'magnifyingglass@regular': {src: g107 as string, w: 1.1875, h: 1.109375},
-  'mic.badge.plus@thin': {src: g108 as string, w: 1.0625, h: 1.1875},
-  'mic.fill@regular': {src: g109 as string, w: 1.0, h: 1.1875},
-  'mic.fill@semibold': {src: g110 as string, w: 1.0625, h: 1.265625},
-  'minus@medium': {src: g111 as string, w: 1.078125, h: 0.296875},
-  'moon.fill@medium': {src: g112 as string, w: 1.15625, h: 1.1875},
-  'moon@medium': {src: g113 as string, w: 1.15625, h: 1.1875},
-  'muesli-mark': {src: g114 as string, w: 635.0, h: 513.0},
-  'network@medium': {src: g115 as string, w: 1.1875, h: 1.1875},
-  'pause.fill@regular': {src: g116 as string, w: 0.859375, h: 0.953125},
-  'pause.fill@semibold': {src: g117 as string, w: 0.90625, h: 1.03125},
-  'pencil.line@regular': {src: g118 as string, w: 1.15625, h: 1.09375},
-  'person.2.fill@regular': {src: g119 as string, w: 1.578125, h: 1.09375},
-  'person.2.fill@semibold': {src: g120 as string, w: 1.59375, h: 1.140625},
-  'person.2.wave.2@regular': {src: g121 as string, w: 1.78125, h: 1.25},
-  'person.2@medium': {src: g122 as string, w: 1.625, h: 1.15625},
-  'person.2@regular': {src: g123 as string, w: 1.609375, h: 1.125},
-  'person.wave.2@medium': {src: g124 as string, w: 1.3125, h: 1.21875},
-  'person.wave.2@regular': {src: g125 as string, w: 1.28125, h: 1.1875},
-  'person.wave.2@semibold': {src: g126 as string, w: 1.34375, h: 1.234375},
-  'photo@medium': {src: g127 as string, w: 1.40625, h: 1.09375},
-  'photo@regular': {src: g128 as string, w: 1.40625, h: 1.046875},
-  'play.circle.fill@regular': {src: g129 as string, w: 1.171875, h: 1.140625},
-  'play.fill@regular': {src: g130 as string, w: 0.890625, h: 0.96875},
-  'play.fill@semibold': {src: g131 as string, w: 0.921875, h: 1.046875},
-  'plus@bold': {src: g132 as string, w: 1.09375, h: 1.015625},
-  'plus@medium': {src: g133 as string, w: 1.078125, h: 1.0},
-  'plus@semibold': {src: g134 as string, w: 1.078125, h: 1.0},
-  'puzzlepiece.extension@regular': {src: g135 as string, w: 1.421875, h: 1.09375},
-  'questionmark.circle@regular': {src: g136 as string, w: 1.171875, h: 1.140625},
-  'record.circle@regular': {src: g137 as string, w: 1.171875, h: 1.140625},
-  'record.circle@semibold': {src: g138 as string, w: 1.203125, h: 1.203125},
-  'rectangle.dashed.badge.record@medium': {src: g139 as string, w: 1.5625, h: 1.25},
-  'rectangle.on.rectangle@regular': {src: g140 as string, w: 1.46875, h: 1.140625},
-  'shippingbox@regular': {src: g141 as string, w: 1.25, h: 1.21875},
-  'sidebar.left@medium': {src: g142 as string, w: 1.40625, h: 1.09375},
-  'sidebar.left@regular': {src: g143 as string, w: 1.40625, h: 1.046875},
-  'sparkles@regular': {src: g144 as string, w: 1.109375, h: 1.265625},
-  'speaker.wave.2.fill@regular': {src: g145 as string, w: 1.390625, h: 1.015625},
-  'square.and.arrow.down@semibold': {src: g146 as string, w: 1.15625, h: 1.328125},
-  'square.and.arrow.up@regular': {src: g147 as string, w: 1.125, h: 1.328125},
-  'square.and.arrow.up@semibold': {src: g148 as string, w: 1.15625, h: 1.390625},
-  'square.and.pencil@medium': {src: g149 as string, w: 1.234375, h: 1.234375},
-  'square.and.pencil@semibold': {src: g150 as string, w: 1.25, h: 1.25},
-  'square.grid.2x2@regular': {src: g151 as string, w: 1.15625, h: 1.046875},
-  'square.on.square@regular': {src: g152 as string, w: 1.296875, h: 1.171875},
-  'square.stack.3d.up@semibold': {src: g153 as string, w: 1.265625, h: 1.375},
-  'square.stack@regular': {src: g154 as string, w: 1.109375, h: 1.359375},
-  'square@regular': {src: g155 as string, w: 1.15625, h: 1.046875},
-  'stop.fill@regular': {src: g156 as string, w: 1.046875, h: 0.9375},
-  'stop.fill@semibold': {src: g157 as string, w: 1.078125, h: 1.0},
-  'sun.max@medium': {src: g158 as string, w: 1.265625, h: 1.265625},
-  'switch.2@medium': {src: g159 as string, w: 1.203125, h: 1.125},
-  'tag.fill@medium': {src: g160 as string, w: 1.34375, h: 1.3125},
-  'text.bubble@regular': {src: g161 as string, w: 1.328125, h: 1.15625},
-  'text.cursor@bold': {src: g162 as string, w: 1.328125, h: 1.25},
-  'text.page@regular': {src: g163 as string, w: 1.078125, h: 1.203125},
-  'text.viewfinder@regular': {src: g164 as string, w: 1.21875, h: 1.109375},
-  'textformat@regular': {src: g165 as string, w: 1.375, h: 0.875},
-  'time-turner': {src: g166 as string, w: 20.0, h: 20.0},
-  'trash@regular': {src: g167 as string, w: 1.109375, h: 1.234375},
-  'tray.2@medium': {src: g168 as string, w: 1.421875, h: 1.296875},
-  'video.fill@regular': {src: g169 as string, w: 1.4375, h: 0.9375},
-  'video.slash@regular': {src: g170 as string, w: 1.4375, h: 1.34375},
-  'video@regular': {src: g171 as string, w: 1.4375, h: 0.953125},
-  'viewfinder@medium': {src: g172 as string, w: 1.21875, h: 1.140625},
-  'wand.and.sparkles@regular': {src: g173 as string, w: 1.25, h: 1.109375},
-  'waveform.path@regular': {src: g174 as string, w: 1.40625, h: 1.28125},
-  'waveform@medium': {src: g175 as string, w: 1.1875, h: 1.21875},
-  'waveform@regular': {src: g176 as string, w: 1.15625, h: 1.171875},
-  'waveform@semibold': {src: g177 as string, w: 1.203125, h: 1.234375},
-  'wifi@medium': {src: g178 as string, w: 1.328125, h: 1.0},
-  'xmark@bold': {src: g179 as string, w: 1.0625, h: 1.0},
-  'xmark@medium': {src: g180 as string, w: 1.046875, h: 0.96875},
-  'xmark@regular': {src: g181 as string, w: 1.03125, h: 0.9375},
-  'xmark@semibold': {src: g182 as string, w: 1.046875, h: 0.984375},
+  'archivebox@regular': {src: g3 as string, w: 1.234375, h: 1.046875},
+  'arrow.clockwise@bold': {src: g4 as string, w: 1.0625, h: 1.265625},
+  'arrow.clockwise@medium': {src: g5 as string, w: 1.046875, h: 1.234375},
+  'arrow.clockwise@regular': {src: g6 as string, w: 1.046875, h: 1.203125},
+  'arrow.down.circle@semibold': {src: g7 as string, w: 1.203125, h: 1.203125},
+  'arrow.down@bold': {src: g8 as string, w: 1.046875, h: 1.109375},
+  'arrow.right@semibold': {src: g9 as string, w: 1.1875, h: 0.953125},
+  'arrow.triangle.2.circlepath@bold': {src: g10 as string, w: 1.234375, h: 1.203125},
+  'arrow.triangle.branch@semibold': {src: g11 as string, w: 1.203125, h: 1.15625},
+  'arrow.turn.down.left@regular': {src: g12 as string, w: 1.171875, h: 0.921875},
+  'arrow.turn.down.right@semibold': {src: g13 as string, w: 1.1875, h: 0.96875},
+  'arrow.turn.left.down@semibold': {src: g14 as string, w: 1.046875, h: 1.109375},
+  'arrow.turn.left.up@semibold': {src: g15 as string, w: 1.046875, h: 1.109375},
+  'arrow.up.arrow.down@regular': {src: g16 as string, w: 1.40625, h: 1.09375},
+  'arrow.up.forward.square@regular': {src: g17 as string, w: 1.15625, h: 1.046875},
+  'arrow.up.left.and.arrow.down.right@regular': {src: g18 as string, w: 1.1875, h: 1.078125},
+  'arrow.up.right@regular': {src: g19 as string, w: 0.96875, h: 0.875},
+  'arrow.up@bold': {src: g20 as string, w: 1.046875, h: 1.109375},
+  'battery.75percent@regular': {src: g21 as string, w: 1.703125, h: 0.8125},
+  'bell.badge.fill@medium': {src: g22 as string, w: 1.15625, h: 1.28125},
+  'bell.badge@regular': {src: g23 as string, w: 1.125, h: 1.234375},
+  'bell@regular': {src: g24 as string, w: 1.125, h: 1.15625},
+  'brain.head.profile@regular': {src: g25 as string, w: 1.234375, h: 1.3125},
+  'bubble.left.and.bubble.right@medium': {src: g26 as string, w: 1.6875, h: 1.3125},
+  'bubble.left.fill@regular': {src: g27 as string, w: 1.328125, h: 1.15625},
+  'bubble.left@regular': {src: g28 as string, w: 1.328125, h: 1.15625},
+  'calendar@medium': {src: g29 as string, w: 1.25, h: 1.09375},
+  'calendar@regular': {src: g30 as string, w: 1.234375, h: 1.046875},
+  'character.book.closed@medium': {src: g31 as string, w: 1.09375, h: 1.234375},
+  'character.bubble@regular': {src: g32 as string, w: 1.328125, h: 1.15625},
+  'character.cursor.ibeam@regular': {src: g33 as string, w: 1.234375, h: 1.171875},
+  'chart.bar.xaxis@medium': {src: g34 as string, w: 1.375, h: 1.09375},
+  'checklist@regular': {src: g35 as string, w: 1.359375, h: 1.140625},
+  'checkmark.circle.fill@medium': {src: g36 as string, w: 1.1875, h: 1.1875},
+  'checkmark.circle.fill@regular': {src: g37 as string, w: 1.171875, h: 1.140625},
+  'checkmark.circle.fill@semibold': {src: g38 as string, w: 1.203125, h: 1.203125},
+  'checkmark.square@regular': {src: g39 as string, w: 1.15625, h: 1.046875},
+  'checkmark@bold': {src: g40 as string, w: 1.15625, h: 1.046875},
+  'checkmark@regular': {src: g41 as string, w: 1.09375, h: 0.984375},
+  'checkmark@semibold': {src: g42 as string, w: 1.140625, h: 1.03125},
+  'chevron.down@bold': {src: g43 as string, w: 1.15625, h: 0.703125},
+  'chevron.down@medium': {src: g44 as string, w: 1.125, h: 0.671875},
+  'chevron.down@regular': {src: g45 as string, w: 1.109375, h: 0.625},
+  'chevron.down@semibold': {src: g46 as string, w: 1.140625, h: 0.6875},
+  'chevron.left.forwardslash.chevron.right@regular': {src: g47 as string, w: 1.625, h: 1.078125},
+  'chevron.left@medium': {src: g48 as string, w: 0.75, h: 1.046875},
+  'chevron.left@regular': {src: g49 as string, w: 0.734375, h: 1.0},
+  'chevron.left@semibold': {src: g50 as string, w: 0.765625, h: 1.0625},
+  'chevron.right@medium': {src: g51 as string, w: 0.75, h: 1.046875},
+  'chevron.right@regular': {src: g52 as string, w: 0.734375, h: 1.0},
+  'chevron.right@semibold': {src: g53 as string, w: 0.765625, h: 1.0625},
+  'chevron.up.chevron.down@bold': {src: g54 as string, w: 1.0, h: 1.21875},
+  'chevron.up.chevron.down@regular': {src: g55 as string, w: 0.90625, h: 1.09375},
+  'chevron.up.chevron.down@semibold': {src: g56 as string, w: 0.96875, h: 1.1875},
+  'chevron.up@regular': {src: g57 as string, w: 1.109375, h: 0.625},
+  'chevron.up@semibold': {src: g58 as string, w: 1.140625, h: 0.6875},
+  'circle.fill@regular': {src: g59 as string, w: 1.171875, h: 1.140625},
+  'circle@regular': {src: g60 as string, w: 1.171875, h: 1.140625},
+  'circle@semibold': {src: g61 as string, w: 1.203125, h: 1.203125},
+  'clock.arrow.circlepath@medium': {src: g62 as string, w: 1.203125, h: 1.1875},
+  'clock.arrow.circlepath@regular': {src: g63 as string, w: 1.1875, h: 1.140625},
+  'clock.badge.questionmark@thin': {src: g64 as string, w: 1.28125, h: 1.1875},
+  'clock@medium': {src: g65 as string, w: 1.1875, h: 1.1875},
+  'command@medium': {src: g66 as string, w: 1.1875, h: 1.109375},
+  'cpu@medium': {src: g67 as string, w: 1.25, h: 1.171875},
+  'cpu@regular': {src: g68 as string, w: 1.234375, h: 1.125},
+  'creditcard@regular': {src: g69 as string, w: 1.40625, h: 0.984375},
+  'desktopcomputer@medium': {src: g70 as string, w: 1.4375, h: 1.1875},
+  'display@regular': {src: g71 as string, w: 1.421875, h: 1.125},
+  'doc.on.clipboard@regular': {src: g72 as string, w: 1.25, h: 1.375},
+  'doc.on.doc@regular': {src: g73 as string, w: 1.25, h: 1.375},
+  'doc.on.doc@semibold': {src: g74 as string, w: 1.28125, h: 1.4375},
+  'doc.text@medium': {src: g75 as string, w: 1.09375, h: 1.234375},
+  'doc.text@regular': {src: g76 as string, w: 1.078125, h: 1.203125},
+  'doc@regular': {src: g77 as string, w: 1.078125, h: 1.203125},
+  'ellipsis@regular': {src: g78 as string, w: 1.09375, h: 0.328125},
+  'ellipsis@semibold': {src: g79 as string, w: 1.125, h: 0.390625},
+  'exclamationmark.triangle.fill@regular': {src: g80 as string, w: 1.234375, h: 1.078125},
+  'exclamationmark.triangle@regular': {src: g81 as string, w: 1.234375, h: 1.078125},
+  'externaldrive@regular': {src: g82 as string, w: 1.40625, h: 0.984375},
+  'eye.slash@medium': {src: g83 as string, w: 1.546875, h: 1.25},
+  'flame.fill@regular': {src: g84 as string, w: 1.0, h: 1.203125},
+  'folder.badge.plus@medium': {src: g85 as string, w: 1.515625, h: 1.171875},
+  'folder.badge.plus@regular': {src: g86 as string, w: 1.515625, h: 1.125},
+  'folder.fill@regular': {src: g87 as string, w: 1.359375, h: 1.046875},
+  'folder@medium': {src: g88 as string, w: 1.375, h: 1.09375},
+  'folder@regular': {src: g89 as string, w: 1.359375, h: 1.046875},
+  'gauge.with.dots.needle.33percent@regular': {src: g90 as string, w: 1.171875, h: 1.140625},
+  'gearshape.fill@medium': {src: g91 as string, w: 1.21875, h: 1.21875},
+  'gearshape@medium': {src: g92 as string, w: 1.234375, h: 1.234375},
+  'gearshape@regular': {src: g93 as string, w: 1.21875, h: 1.1875},
+  'globe@regular': {src: g94 as string, w: 1.171875, h: 1.140625},
+  'hand.raised.fill@light': {src: g95 as string, w: 1.171875, h: 1.203125},
+  'hand.raised.fill@medium': {src: g96 as string, w: 1.203125, h: 1.25},
+  'hand.raised@regular': {src: g97 as string, w: 1.1875, h: 1.21875},
+  'hand.tap.fill@semibold': {src: g98 as string, w: 1.1875, h: 1.34375},
+  'hand.thumbsdown@regular': {src: g99 as string, w: 1.171875, h: 1.203125},
+  'hand.thumbsup@regular': {src: g100 as string, w: 1.171875, h: 1.203125},
+  'headphones@regular': {src: g101 as string, w: 1.25, h: 1.1875},
+  'hourglass@medium': {src: g102 as string, w: 0.84375, h: 1.09375},
+  'icloud.slash@semibold': {src: g103 as string, w: 1.4375, h: 1.265625},
+  'icloud@semibold': {src: g104 as string, w: 1.4375, h: 1.0625},
+  'info.circle@medium': {src: g105 as string, w: 1.1875, h: 1.1875},
+  'info.circle@regular': {src: g106 as string, w: 1.171875, h: 1.140625},
+  'internaldrive@regular': {src: g107 as string, w: 1.40625, h: 0.984375},
+  'ipad@medium': {src: g108 as string, w: 1.09375, h: 1.296875},
+  'iphone.gen3@medium': {src: g109 as string, w: 1.03125, h: 1.25},
+  'keyboard.fill@light': {src: g110 as string, w: 1.46875, h: 0.9375},
+  'keyboard.fill@medium': {src: g111 as string, w: 1.5, h: 0.96875},
+  'keyboard@regular': {src: g112 as string, w: 1.484375, h: 0.921875},
+  'keyboard@semibold': {src: g113 as string, w: 1.515625, h: 0.984375},
+  'laptopcomputer@regular': {src: g114 as string, w: 1.671875, h: 0.9375},
+  'largecircle.fill.circle@semibold': {src: g115 as string, w: 1.203125, h: 1.203125},
+  'leaf.fill@semibold': {src: g116 as string, w: 1.265625, h: 1.109375},
+  'line.3.horizontal.decrease@regular': {src: g117 as string, w: 1.25, h: 0.734375},
+  'list.bullet.clipboard@regular': {src: g118 as string, w: 1.078125, h: 1.390625},
+  'list.bullet@regular': {src: g119 as string, w: 1.234375, h: 0.859375},
+  'lock.fill@medium': {src: g120 as string, w: 0.96875, h: 1.15625},
+  'lock@regular': {src: g121 as string, w: 0.953125, h: 1.109375},
+  'macwindow@regular': {src: g122 as string, w: 1.40625, h: 1.046875},
+  'magnifyingglass@medium': {src: g123 as string, w: 1.1875, h: 1.15625},
+  'magnifyingglass@regular': {src: g124 as string, w: 1.1875, h: 1.109375},
+  'mic.badge.plus@thin': {src: g125 as string, w: 1.0625, h: 1.1875},
+  'mic.fill@light': {src: g126 as string, w: 0.984375, h: 1.203125},
+  'mic.fill@regular': {src: g127 as string, w: 1.0, h: 1.1875},
+  'mic.fill@semibold': {src: g128 as string, w: 1.0625, h: 1.265625},
+  'mic@regular': {src: g129 as string, w: 1.0, h: 1.1875},
+  'minus@medium': {src: g130 as string, w: 1.078125, h: 0.296875},
+  'moon.fill@medium': {src: g131 as string, w: 1.15625, h: 1.1875},
+  'moon@medium': {src: g132 as string, w: 1.15625, h: 1.1875},
+  'muesli-mark': {src: g133 as string, w: 635.0, h: 513.0},
+  'network@medium': {src: g134 as string, w: 1.1875, h: 1.1875},
+  'pause.fill@regular': {src: g135 as string, w: 0.859375, h: 0.953125},
+  'pause.fill@semibold': {src: g136 as string, w: 0.90625, h: 1.03125},
+  'pencil.line@regular': {src: g137 as string, w: 1.15625, h: 1.09375},
+  'person.2.fill@medium': {src: g138 as string, w: 1.59375, h: 1.140625},
+  'person.2.fill@regular': {src: g139 as string, w: 1.578125, h: 1.09375},
+  'person.2.fill@semibold': {src: g140 as string, w: 1.59375, h: 1.140625},
+  'person.2.wave.2@regular': {src: g141 as string, w: 1.78125, h: 1.25},
+  'person.2@medium': {src: g142 as string, w: 1.625, h: 1.15625},
+  'person.2@regular': {src: g143 as string, w: 1.609375, h: 1.125},
+  'person.wave.2@medium': {src: g144 as string, w: 1.3125, h: 1.21875},
+  'person.wave.2@regular': {src: g145 as string, w: 1.28125, h: 1.1875},
+  'person.wave.2@semibold': {src: g146 as string, w: 1.34375, h: 1.234375},
+  'photo@medium': {src: g147 as string, w: 1.40625, h: 1.09375},
+  'photo@regular': {src: g148 as string, w: 1.40625, h: 1.046875},
+  'play.circle.fill@regular': {src: g149 as string, w: 1.171875, h: 1.140625},
+  'play.fill@regular': {src: g150 as string, w: 0.890625, h: 0.96875},
+  'play.fill@semibold': {src: g151 as string, w: 0.921875, h: 1.046875},
+  'plus@bold': {src: g152 as string, w: 1.09375, h: 1.015625},
+  'plus@medium': {src: g153 as string, w: 1.078125, h: 1.0},
+  'plus@regular': {src: g154 as string, w: 1.0625, h: 0.953125},
+  'plus@semibold': {src: g155 as string, w: 1.078125, h: 1.0},
+  'puzzlepiece.extension@regular': {src: g156 as string, w: 1.421875, h: 1.09375},
+  'questionmark.circle@regular': {src: g157 as string, w: 1.171875, h: 1.140625},
+  'record.circle@regular': {src: g158 as string, w: 1.171875, h: 1.140625},
+  'record.circle@semibold': {src: g159 as string, w: 1.203125, h: 1.203125},
+  'rectangle.3.group.fill@medium': {src: g160 as string, w: 1.625, h: 1.09375},
+  'rectangle.dashed.badge.record@light': {src: g161 as string, w: 1.546875, h: 1.21875},
+  'rectangle.dashed.badge.record@medium': {src: g162 as string, w: 1.5625, h: 1.25},
+  'rectangle.on.rectangle@regular': {src: g163 as string, w: 1.46875, h: 1.140625},
+  'shippingbox@regular': {src: g164 as string, w: 1.25, h: 1.21875},
+  'sidebar.left@medium': {src: g165 as string, w: 1.40625, h: 1.09375},
+  'sidebar.left@regular': {src: g166 as string, w: 1.40625, h: 1.046875},
+  'slider.horizontal.3@semibold': {src: g167 as string, w: 1.28125, h: 1.0625},
+  'sparkles@regular': {src: g168 as string, w: 1.109375, h: 1.265625},
+  'speaker.wave.2.fill@light': {src: g169 as string, w: 1.359375, h: 1.015625},
+  'speaker.wave.2.fill@regular': {src: g170 as string, w: 1.390625, h: 1.015625},
+  'speaker.wave.2@regular': {src: g171 as string, w: 1.390625, h: 1.015625},
+  'square.and.arrow.down@semibold': {src: g172 as string, w: 1.15625, h: 1.328125},
+  'square.and.arrow.up@regular': {src: g173 as string, w: 1.125, h: 1.328125},
+  'square.and.arrow.up@semibold': {src: g174 as string, w: 1.15625, h: 1.390625},
+  'square.and.pencil@medium': {src: g175 as string, w: 1.234375, h: 1.234375},
+  'square.and.pencil@regular': {src: g176 as string, w: 1.21875, h: 1.1875},
+  'square.and.pencil@semibold': {src: g177 as string, w: 1.25, h: 1.25},
+  'square.grid.2x2@regular': {src: g178 as string, w: 1.15625, h: 1.046875},
+  'square.on.square@regular': {src: g179 as string, w: 1.296875, h: 1.171875},
+  'square.stack.3d.up@semibold': {src: g180 as string, w: 1.265625, h: 1.375},
+  'square.stack@regular': {src: g181 as string, w: 1.109375, h: 1.359375},
+  'square@regular': {src: g182 as string, w: 1.15625, h: 1.046875},
+  'stop.fill@regular': {src: g183 as string, w: 1.046875, h: 0.9375},
+  'stop.fill@semibold': {src: g184 as string, w: 1.078125, h: 1.0},
+  'sun.max@medium': {src: g185 as string, w: 1.265625, h: 1.265625},
+  'switch.2@medium': {src: g186 as string, w: 1.203125, h: 1.125},
+  'tag.fill@medium': {src: g187 as string, w: 1.34375, h: 1.3125},
+  'text.bubble@regular': {src: g188 as string, w: 1.328125, h: 1.15625},
+  'text.cursor@bold': {src: g189 as string, w: 1.328125, h: 1.25},
+  'text.page@regular': {src: g190 as string, w: 1.078125, h: 1.203125},
+  'text.viewfinder@regular': {src: g191 as string, w: 1.21875, h: 1.109375},
+  'textformat@regular': {src: g192 as string, w: 1.375, h: 0.875},
+  'time-turner': {src: g193 as string, w: 20.0, h: 20.0},
+  'trash@regular': {src: g194 as string, w: 1.109375, h: 1.234375},
+  'tray.2@medium': {src: g195 as string, w: 1.421875, h: 1.296875},
+  'video.fill@regular': {src: g196 as string, w: 1.4375, h: 0.9375},
+  'video.slash@regular': {src: g197 as string, w: 1.4375, h: 1.34375},
+  'video@regular': {src: g198 as string, w: 1.4375, h: 0.953125},
+  'viewfinder@medium': {src: g199 as string, w: 1.21875, h: 1.140625},
+  'wand.and.sparkles@regular': {src: g200 as string, w: 1.25, h: 1.109375},
+  'waveform.path@regular': {src: g201 as string, w: 1.40625, h: 1.28125},
+  'waveform@medium': {src: g202 as string, w: 1.1875, h: 1.21875},
+  'waveform@regular': {src: g203 as string, w: 1.15625, h: 1.171875},
+  'waveform@semibold': {src: g204 as string, w: 1.203125, h: 1.234375},
+  'wifi@medium': {src: g205 as string, w: 1.328125, h: 1.0},
+  'xmark@bold': {src: g206 as string, w: 1.0625, h: 1.0},
+  'xmark@medium': {src: g207 as string, w: 1.046875, h: 0.96875},
+  'xmark@regular': {src: g208 as string, w: 1.03125, h: 0.9375},
+  'xmark@semibold': {src: g209 as string, w: 1.046875, h: 0.984375},
 } as const;
 
 export type GlyphKey = keyof typeof glyphs;

@@ -43,6 +43,8 @@ export interface FloatingIndicatorProps {
   /** Notice icon (showWarning default "⚡"; dictation failures pass "!"). */
   noticeIcon?: string;
   minimalPlacement?: MinimalPlacement;
+  /** Override the capsule size (used by FloatingIndicatorTransition while the panel frame animates); content clips. */
+  size?: {w: number; h: number};
 }
 
 const hex = (h: string, a: number) => {
@@ -60,7 +62,7 @@ const glass = (tintAlpha: number): React.CSSProperties => ({
 /** Panel hasShadow = true (borderless window shadow). VERIFY. */
 const PANEL_SHADOW = '0 3px 10px rgba(0,0,0,0.28), 0 0 0 0.5px rgba(0,0,0,0.25)';
 
-const Pill: React.FC<{w: number | string; h: number; minW?: number; border: string; fill: React.CSSProperties; alpha?: number; shadow?: boolean; children?: React.ReactNode; style?: React.CSSProperties}> = ({
+const Pill: React.FC<{w: number | string; h: number; minW?: number; border: string; fill: React.CSSProperties; alpha?: number; shadow?: boolean; children?: React.ReactNode; style?: React.CSSProperties; size?: {w: number; h: number}}> = ({
   w,
   h,
   minW,
@@ -70,20 +72,23 @@ const Pill: React.FC<{w: number | string; h: number; minW?: number; border: stri
   shadow = true,
   children,
   style,
+  size,
 }) => (
   <div
     style={{
       position: 'relative',
-      width: w,
-      minWidth: minW,
-      height: h,
+      width: size ? size.w : w,
+      minWidth: size ? undefined : minW,
+      height: size ? size.h : h,
+      overflow: size ? 'hidden' : undefined,
       boxSizing: 'border-box',
-      borderRadius: h / 2,
+      borderRadius: (size ? size.h : h) / 2,
       boxShadow: [`inset 0 0 0 1px ${border}`, shadow ? PANEL_SHADOW : ''].filter(Boolean).join(', '),
       opacity: alpha,
       flex: 'none',
       ...fill,
       ...style,
+      ...(size ? {width: size.w, minWidth: undefined, maxWidth: undefined, height: size.h} : {}),
     }}
   >
     {children}
@@ -111,15 +116,17 @@ export const FloatingIndicator: React.FC<FloatingIndicatorProps> = ({
   message = '',
   noticeIcon,
   minimalPlacement = 'leading',
+  size,
 }) => {
+  const H = (h: number) => size?.h ?? h;
   const prompt = `${isToggle ? 'Press' : 'Hold'} ${hotkeyLabel} to dictate`;
 
   switch (phase) {
     case 'idle':
       // 44×28, tint 0.44, border white 0.22, panel alpha 0.90; the menu-bar mark at 14×14, centred.
       return (
-        <Pill w={44} h={28} border="rgba(255,255,255,0.22)" fill={glass(0.44)} alpha={0.9}>
-          <div style={{position: 'absolute', left: 15, top: 7}}>
+        <Pill w={44} h={28} size={size} border="rgba(255,255,255,0.22)" fill={glass(0.44)} alpha={0.9}>
+          <div style={{position: 'absolute', left: 15, top: (H(28) - 14) / 2}}>
             <MuesliMark color="#FFFFFF" box={14} />
           </div>
         </Pill>
@@ -127,8 +134,8 @@ export const FloatingIndicator: React.FC<FloatingIndicatorProps> = ({
     case 'idleHover':
       // idleHoverPillSize: max(220, 42 + text + 22) × 36; mic 18×18 at x 14; text 11pt at x 42, white 0.75.
       return (
-        <Pill w="auto" minW={220} h={36} border="rgba(255,255,255,0.14)" fill={glass(0.72)} style={{display: 'inline-flex', alignItems: 'center', padding: '0 22px 0 42px'}}>
-          <div style={{position: 'absolute', left: 14, top: 9}}>
+        <Pill w="auto" minW={220} h={36} size={size} border="rgba(255,255,255,0.14)" fill={glass(0.72)} style={{display: 'inline-flex', alignItems: 'center', padding: '0 22px 0 42px'}}>
+          <div style={{position: 'absolute', left: 14, top: (H(36) - 18) / 2}}>
             <MuesliMark color="#FFFFFF" box={18} />
           </div>
           <span style={{...font(11, 'regular'), color: 'rgba(255,255,255,0.75)', whiteSpace: 'nowrap'}}>{prompt}</span>
@@ -148,15 +155,15 @@ export const FloatingIndicator: React.FC<FloatingIndicatorProps> = ({
         ops.push(0.38 + (Math.sin(p) + 1) * 0.18);
       }
       return (
-        <Pill w={76} h={22} border="rgba(255,255,255,0.16)" fill={glass(0.62)}>
-          <Bars w={76} h={22} amps={amps} opacities={ops} />
+        <Pill w={76} h={22} size={size} border="rgba(255,255,255,0.16)" fill={glass(0.62)}>
+          <Bars w={size?.w ?? 76} h={H(22)} amps={amps} opacities={ops} />
         </Pill>
       );
     }
     case 'connecting':
       // microphoneStartupPending: 116×22, "Connecting…" 11pt centred, no bars.
       return (
-        <Pill w={116} h={22} border="rgba(255,255,255,0.16)" fill={glass(0.62)} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <Pill w={116} h={22} size={size} border="rgba(255,255,255,0.16)" fill={glass(0.62)} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <span style={{...font(11, 'regular'), color: '#FFFFFF'}}>Connecting…</span>
         </Pill>
       );
@@ -165,17 +172,17 @@ export const FloatingIndicator: React.FC<FloatingIndicatorProps> = ({
       const smoothed = latestLevel(levels);
       const amps = Array.from({length: 5}, (_, i) => smoothed * standingWeight(i, 5));
       return (
-        <Pill w={76} h={22} border="rgba(255,255,255,0.16)" fill={{background: hex(recordingColorHex, 0.85)}}>
-          <div style={{position: 'absolute', left: 7, top: 6, width: 10, height: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', ...systemFont(7, 600), color: 'rgba(255,255,255,0.45)'}}>✕</div>
-          <Bars w={76} h={22} amps={amps} opacities={amps.map(() => 0.85)} />
-          <div style={{position: 'absolute', left: 76 - 6 - 8, top: 8, width: 6, height: 6, borderRadius: 1, background: 'rgba(255,255,255,0.85)'}} />
+        <Pill w={76} h={22} size={size} border="rgba(255,255,255,0.16)" fill={{background: hex(recordingColorHex, 0.85)}}>
+          <div style={{position: 'absolute', left: 7, top: (H(22) - 10) / 2, width: 10, height: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', ...systemFont(7, 600), color: 'rgba(255,255,255,0.45)'}}>✕</div>
+          <Bars w={size?.w ?? 76} h={H(22)} amps={amps} opacities={amps.map(() => 0.85)} />
+          <div style={{position: 'absolute', right: 8, top: (H(22) - 6) / 2, width: 6, height: 6, borderRadius: 1, background: 'rgba(255,255,255,0.85)'}} />
         </Pill>
       );
     }
     case 'transcribing':
       // transcribingPillSize: max(190, 14 + 18 + 6 + text + 8 + 14) × 32; wand.and.sparkles (15pt) in 18×18 + title 11pt white 0.82.
       return (
-        <Pill w="auto" minW={190} h={32} border="rgba(255,255,255,0.16)" fill={glass(0.62)} style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0 14px'}}>
+        <Pill w="auto" minW={190} h={32} size={size} border="rgba(255,255,255,0.16)" fill={glass(0.62)} style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0 14px'}}>
           <span style={{width: 18, height: 18, display: 'inline-flex', alignItems: 'center', justifyContent: 'center'}}>
             <Symbol name="wand.and.sparkles" size={15} weight="regular" color="#FFFFFF" />
           </span>
@@ -188,7 +195,7 @@ export const FloatingIndicator: React.FC<FloatingIndicatorProps> = ({
       const icon = noticeIcon ?? (phase === 'success' ? '✓' : '⚡');
       const bg = phase === 'success' ? hex('34C759', 0.92) : hex('D99A11', 0.92);
       return (
-        <Pill w="auto" minW={180} h={36} border="rgba(255,255,255,0.24)" fill={{background: bg}} style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 4, padding: '0 18px', maxWidth: 640}}>
+        <Pill w="auto" minW={180} h={36} size={size} border="rgba(255,255,255,0.24)" fill={{background: bg}} style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 4, padding: '0 18px', maxWidth: 640}}>
           <span style={{minWidth: 24, textAlign: 'center', ...systemFont(14, 700), color: 'rgba(26,20,13,0.95)'}}>{icon}</span>
           <span style={{...font(11, 'medium'), color: 'rgba(26,20,13,0.95)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}}>{message}</span>
         </Pill>

@@ -3,7 +3,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {DashboardContent, MuesliThemeProvider, layout, type Appearance, type SidebarProps} from '../../../src';
 import {KitFrame} from '../KitFrame';
-import {MeetingsBrowser, MeetingDetail, MeetingMedia, LiveMeetingDetail, ScreenSourcePicker} from '../../../src/screens/meetings';
+import {MeetingsBrowser, MeetingDetail, MeetingMedia, LiveMeetingDetail, ScreenSourcePicker, FloatingMeetingTranscript} from '../../../src/screens/meetings';
 import {
   DESIGN_REVIEW,
   DESIGN_REVIEW_LIVE,
@@ -363,8 +363,21 @@ const comps: Array<[string, React.FC<{a: Appearance}>, Appearance[]]> = [
   ['Chat-docked-typing', DockedTyping, ['dark']],
 ];
 
+/** FloatingMeetingTranscriptPanel: live with a provisional line, paused + copied, empty, notch background. */
+const FloatingTranscriptStates: React.FC = () => (
+  <KitFrame appearance="dark" background="linear-gradient(135deg, #3B4A6B, #6B4F6E)">
+    <div style={{display: 'flex', gap: 24, padding: 24}}>
+      <FloatingMeetingTranscript transcript={DESIGN_REVIEW_LIVE_TRANSCRIPT} partialYou={DESIGN_REVIEW_LIVE_PARTIAL_YOU} />
+      <FloatingMeetingTranscript transcript={DESIGN_REVIEW_LIVE_TRANSCRIPT} paused copied />
+      <FloatingMeetingTranscript transcript="" />
+      <FloatingMeetingTranscript transcript={DESIGN_REVIEW_LIVE_TRANSCRIPT} partialYou={DESIGN_REVIEW_LIVE_PARTIAL_YOU} notch />
+    </div>
+  </KitFrame>
+);
+
 export const Root: React.FC = () => (
   <>
+    <Composition id="Meetings-floating-transcript" component={FloatingTranscriptStates} durationInFrames={1} fps={30} width={1584} height={368} />
     <Composition id="Ref-meetings-dark" component={RefBrowser} durationInFrames={1} fps={30} width={W} height={H} />
     <Composition id="Ref-chat-dark" component={RefChat} durationInFrames={1} fps={30} width={W} height={H} />
     {comps.flatMap(([id, C, apps]) =>

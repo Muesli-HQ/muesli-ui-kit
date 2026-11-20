@@ -22,3 +22,5 @@ export {ScreenSourcePicker} from './ScreenSourcePicker';
 export type {ScreenSourcePickerProps, ScreenSourceOption} from './ScreenSourcePicker';
 export {LiveMeetingDetail, LiveTranscript} from './LiveMeetingDetail';
 export type {LiveMeetingDetailProps} from './LiveMeetingDetail';
+export {FloatingMeetingTranscript, floatingTranscriptFrame, FLOATING_TRANSCRIPT_SIZE} from './FloatingMeetingTranscript';
+export type {FloatingMeetingTranscriptProps} from './FloatingMeetingTranscript';
